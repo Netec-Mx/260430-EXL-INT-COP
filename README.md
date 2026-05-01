@@ -1,12 +1,17 @@
+<img src="images/neteclogo (2).png" alt="logo" width="300"/>
+
 # Excel Intermediate con Copilot
 
 Este curso está diseñado para preparar a los asistentes para obtener la certificación Microsoft Office Specialist: Excel Associate (Microsoft 365 Apps). A lo largo del curso, dominarás las habilidades esenciales de Excel, incluyendo la manipulación de libros, celdas, fórmulas, funciones, tablas y gráficos. Además, se integra un módulo dedicado al uso de Microsoft Copilot en Excel, reflejando las capacidades más modernas de la herramienta en entornos colaborativos y productivos.
 
-## Estructura
+## Plataforma de laboratorios
 
-- `CapituloXX/README.md`: guía de laboratorio por capítulo.
+
+Te damos la bienvenida a la **plataforma de laboratorios** del curso **Excel Intermediate con Copilot**. Aquí podrás explorar diferentes tecnologías a través de prácticas guiadas. ¡Desarrolla tus habilidades y lleva tus conocimientos al siguiente nivel!
 
 ## Lista de laboratorios
+
+Cada uno de estos laboratorios está diseñado para ofrecerte una experiencia práctica. Haz clic en los enlaces para comenzar.
 
 ### Capítulo 1
 
@@ -44,8 +49,16 @@ Este curso está diseñado para preparar a los asistentes para obtener la certif
   - Descripción: Actividad práctica guiada basada estrictamente en el contenido del módulo para obtener la certificación Microsoft Office Specialist: Excel Associate (Microsoft 365 Apps).
   - Duración estimada: 36 min
 
-## Flujo de colaboración
+## 📬 **Contacto y más información**
 
-- Trabajar en `changes_course`.
-- Crear Pull Request hacia `main`.
-- Merge por `Squash and merge`.
+
+
+Si tienes alguna pregunta o necesitas más detalles, no dudes en [contactarnos](mailto:soporte@netec.com). También puedes encontrar más recursos en nuestra [página](https://netec.com).
+
+
+
+---
+
+
+
+¡Gracias por visitar nuestra plataforma! No olvides revisar todos los laboratorios y comenzar tu viaje de aprendizaje hoy mismo.
