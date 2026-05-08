@@ -1,4 +1,4 @@
-# Manipulación de celdas y rangos de datos
+# Práctica 2: Manipulación de celdas y rangos de datos
 
 ## Metadatos
 
