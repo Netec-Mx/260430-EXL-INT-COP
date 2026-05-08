@@ -1,4 +1,4 @@
-# Uso de Microsoft Copilot en Excel
+# Práctica 6: Uso de Microsoft Copilot en Excel
 
 ## Metadatos
 
