@@ -4,7 +4,7 @@
 
 | Campo            | Detalle                                      |
 |------------------|----------------------------------------------|
-| **Duración**     | 36 minutos                                   |
+| **Duración**     | 25 minutos                                   |
 | **Complejidad**  | Media                                        |
 | **Nivel Bloom**  | Aplicar                                      |
 | **Módulo**       | 1 — Gestión de libros, hojas y datos externos |
@@ -25,7 +25,7 @@ Al completar esta práctica, serás capaz de:
 - [ ] Importar un archivo `.txt` delimitado por comas usando Power Query desde la pestaña **Datos**, seleccionando correctamente el delimitador y la codificación de caracteres.
 - [ ] Conectar Excel a una fuente de datos online y configurar la actualización de la consulta.
 - [ ] Insertar hipervínculos funcionales hacia celdas de otra hoja, hacia un archivo externo y hacia una URL dentro de un libro de Excel.
-- [ ] Configurar vistas personalizadas, inmovilizar paneles y agregar encabezados y pies de página con información del documento.
+- [ ] Inmovilizar paneles y agregar encabezados y pies de página con información del documento.
 - [ ] Establecer el área de impresión, los títulos de impresión repetidos y las propiedades del libro (autor y palabras clave).
 
 ---
@@ -105,6 +105,9 @@ Guarda el archivo como:
 - **Codificación:** UTF-8
 - **Ubicación:** `C:\LabExcel\Lab01\`
 
+![Imagen práctica](../images/imagen%2001.png)
+
+
 **3. Abrir Excel y crear un nuevo libro:**
 
 Abre Microsoft Excel 365. Crea un libro en blanco. Guárdalo inmediatamente como:
@@ -129,21 +132,28 @@ Abre Microsoft Excel 365. Crea un libro en blanco. Guárdalo inmediatamente como
 
 1. Con el libro `Lab01_GestionLibros.xlsx` abierto, haz clic en la pestaña **Datos** en la cinta de opciones.
 
+![Imagen práctica](../images/imagen%2002.png)
+
 2. En el grupo **Obtener y transformar datos**, haz clic en el botón **Obtener datos**.
 
 3. En el menú desplegable, selecciona **Desde archivo** → **Desde texto/CSV**.
 
+![Imagen práctica](../images/imagen%2004.png)
+
    > 📌 **¿Por qué este camino y no abrir el archivo directamente?** Si abrieras el archivo `.txt` con doble clic, Excel podría interpretar mal los formatos de fecha o los ceros iniciales en los IDs. Power Query te da control total sobre el proceso.
 
-4. En el cuadro de diálogo **Importar datos**, navega hasta `C:\LabExcel\Lab01\`, selecciona `empleados_datos.txt` y haz clic en **Importar**.
+4. En el cuadro de diálogo **Importar datos**, navega hasta `C:\LabExcel\Lab01\`, selecciona `empleados_datos.txt` y haz clic en **Transformar datos**.
 
 5. Se abre la ventana de vista previa de Power Query. Verifica y configura los siguientes campos:
+
 
    | Campo                  | Valor correcto a seleccionar         |
    |------------------------|--------------------------------------|
    | **Origen del archivo** | `65001: Unicode (UTF-8)`             |
    | **Delimitador**        | `Coma`                               |
    | **Detección de tipo de datos** | `Basado en las primeras 200 filas` |
+
+![Imagen práctica](../images/imagen%2003.png)
 
 6. Revisa la vista previa de los datos. Deberías ver 10 filas de empleados con las columnas: `ID`, `Nombre`, `Apellido`, `Departamento`, `Cargo`, `Salario`, `FechaIngreso`. Verifica que los nombres con tildes (García, Pérez, Ramírez, etc.) se muestren correctamente.
 
@@ -163,9 +173,22 @@ Abre Microsoft Excel 365. Crea un libro en blanco. Guárdalo inmediatamente como
    | `Salario`       | Número decimal (1.2) | Clic en el ícono → seleccionar **Número entero** |
    | `FechaIngreso`  | Fecha             | Clic en el ícono → seleccionar **Fecha**   |
 
-9. Para cambiar el tipo de la columna `FechaIngreso`: haz clic en el ícono de tipo de datos en el encabezado de esa columna → selecciona **Fecha** → en el cuadro de diálogo que aparece, selecciona **Reemplazar el paso actual**.
+9. Para cambiar el tipo de la columna `FechaIngreso`: haz clic en el ícono de tipo de datos en el encabezado de esa columna → selecciona **Fecha** 
 
-10. Haz clic en **Cerrar y cargar** (botón en la esquina superior izquierda del Editor de Power Query) → selecciona **Cerrar y cargar en...** → en el cuadro de diálogo, elige **Tabla** y selecciona **Hoja de cálculo existente** → celda `$A$1` → **Aceptar**.
+![Imagen práctica](../images/imagen%2005.png)
+
+→ en el cuadro de diálogo que aparece, selecciona **Sustituir la actual**.
+
+![Imagen práctica](../images/imagen%2006.png)
+
+
+10. Haz clic en **Cerrar y cargar** (botón en la esquina superior izquierda del Editor de Power Query) → selecciona **Cerrar y cargar en...** 
+
+![Imagen práctica](../images/imagen%2007.png)
+
+→ en el cuadro de diálogo, elige **Tabla** y selecciona **Hoja de cálculo existente** → celda `$A$1` → **Aceptar**.
+
+![Imagen práctica](../images/imagen%2008.png)
 
 11. Los datos se cargan en la **Hoja1** del libro como una tabla de Excel formateada. Haz doble clic en la pestaña de la hoja y renómbrala como **`Empleados`**.
 
@@ -180,11 +203,12 @@ La hoja `Empleados` debe mostrar una tabla con:
 
 #### Verificación
 
-- [ ] La tabla tiene exactamente 10 filas de datos y 7 columnas.
+- [ ] La tabla tiene exactamente 11 filas de datos y 7 columnas.
 - [ ] Los nombres con tildes (García, Pérez, Ramírez) se muestran correctamente, sin caracteres extraños.
 - [ ] La columna `FechaIngreso` muestra valores de tipo fecha (alineados a la derecha o con formato de fecha visible).
 - [ ] En el panel **Consultas y conexiones** (derecha de la pantalla) aparece la consulta `empleados_datos`.
 
+![Imagen práctica](../images/imagen%2009.png)
 ---
 
 ### Paso 2 — Conectar a una fuente de datos online
@@ -198,6 +222,7 @@ La hoja `Empleados` debe mostrar una tabla con:
 1. En el libro, crea una nueva hoja: haz clic en el botón **+** (Nueva hoja) en la barra de pestañas. Renómbrala como **`DatosOnline`**.
 
 2. Asegúrate de estar en la hoja `DatosOnline`. Haz clic en la pestaña **Datos** → **Obtener datos** → **Desde otras fuentes** → **Desde la Web**.
+![Imagen práctica](../images/imagen%2010.png)
 
 3. En el cuadro de diálogo **Desde la Web**, selecciona la opción **Básico** e introduce la siguiente URL (una tabla de ejemplo de países y capitales publicada por W3Schools):
 
@@ -205,9 +230,13 @@ La hoja `Empleados` debe mostrar una tabla con:
    https://www.w3schools.com/html/html_tables.asp
    ```
 
-4. Haz clic en **Aceptar**. Excel se conecta a la página. Puede tardar entre 10 y 30 segundos dependiendo de la velocidad de conexión.
+4. Haz clic en **Aceptar**. Si aparece Acceder a contenido web, selecciona anónimo y después da clic a conectar.
 
-5. Se abre el **Navegador** de Power Query. En el panel izquierdo verás una lista de tablas detectadas en la página (pueden aparecer como `Table 0`, `Table 1`, etc.).
+![Imagen práctica](../images/imagen%2011.png)
+
+Excel se conecta a la página. Puede tardar entre 10 y 30 segundos dependiendo de la velocidad de conexión.
+
+5. Se abre el **Navegador** de Power Query. En el panel izquierdo verás una lista de tablas detectadas en la página (pueden aparecer como `Table 1`, `Table 2`, etc.).
 
 6. Haz clic en cada tabla para previsualizar su contenido en el panel derecho. Selecciona la tabla que contenga datos de ejemplo con columnas reconocibles (nombres de empresas, países o cualquier tabla con datos tabulares claros).
 
@@ -215,11 +244,18 @@ La hoja `Empleados` debe mostrar una tabla con:
 
 7. Con la tabla seleccionada, haz clic en **Cargar** (no en "Transformar datos" en este paso).
 
+![Imagen práctica](../images/imagen%2012.png)
+
 8. Los datos se cargan en la hoja `DatosOnline` como una tabla de Excel.
 
-9. Ahora configura la actualización automática: haz clic en cualquier celda dentro de la tabla importada → pestaña **Datos** → en el grupo **Consultas y conexiones**, haz clic en **Propiedades** (o clic derecho sobre la consulta en el panel lateral → **Propiedades**).
+9. Ahora configura la actualización automática: haz clic derecho sobre la consulta en el panel lateral → **Propiedades**.
+
+![Imagen práctica](../images/imagen%2013.png)
+
 
 10. En la pestaña **Uso** del cuadro de diálogo **Propiedades de la consulta**, activa la casilla **Actualizar cada** y establece el valor en **`60`** minutos. Haz clic en **Aceptar**.
+
+![Imagen práctica](../images/imagen%2014.png)
 
 11. Para probar la actualización manual: pestaña **Datos** → botón **Actualizar todo** → observa el indicador de actualización en la barra de estado.
 
@@ -253,11 +289,19 @@ La hoja `Empleados` debe mostrar una tabla con:
 
 4. Escribe el nombre **`TablaEmpleados`** y presiona **Enter**. Has definido un rango con nombre.
 
+![Imagen práctica](../images/imagen%2015.png)
+
+
 5. Ahora define un segundo rango con nombre para la columna de salarios:
    - Selecciona el rango **`F2:F11`** (los valores de salario, sin el encabezado).
    - Haz clic en el **Cuadro de nombres**, escribe **`Salarios`** y presiona **Enter**.
 
+![Imagen práctica](../images/imagen%2016.png)
+
 6. Verifica los rangos definidos usando el Administrador de nombres: pestaña **Fórmulas** → grupo **Nombres definidos** → **Administrador de nombres**. Deberías ver `TablaEmpleados` y `Salarios` en la lista. Haz clic en **Cerrar**.
+
+![Imagen práctica](../images/imagen%2017.png)
+
 
 7. Practica la navegación: haz clic en cualquier celda aleatoria del libro. Luego haz clic en la flecha desplegable del **Cuadro de nombres** → selecciona **`TablaEmpleados`**. Excel selecciona inmediatamente el rango completo de la tabla.
 
@@ -296,6 +340,8 @@ La hoja `Empleados` debe mostrar una tabla con:
    | `A5`  | `Abrir archivo de origen de datos`      |
    | `A6`  | `Visitar documentación de Power Query`  |
 
+![Imagen práctica](../images/imagen%2018.png)
+
 3. **Hipervínculo 1 — Hacia otra hoja del libro:**
    - Haz clic derecho en la celda **`A3`** → **Vínculo** (o **Hipervínculo**) → se abre el cuadro de diálogo **Insertar hipervínculo**.
    - En el panel izquierdo, selecciona **Lugar de este documento**.
@@ -303,15 +349,22 @@ La hoja `Empleados` debe mostrar una tabla con:
    - En el campo **Referencia de celda**, escribe **`A1`**.
    - Haz clic en **Aceptar**.
 
+   ![Imagen práctica](../images/imagen%2019.png)
+
+
 4. **Hipervínculo 2 — Hacia la hoja DatosOnline:**
    - Haz clic derecho en la celda **`A4`** → **Vínculo** → **Lugar de este documento**.
    - Selecciona la hoja **`DatosOnline`**, referencia de celda **`A1`**.
    - Haz clic en **Aceptar**.
 
+   ![Imagen práctica](../images/imagen%2020.png)
+
 5. **Hipervínculo 3 — Hacia un archivo externo:**
    - Haz clic derecho en la celda **`A5`** → **Vínculo** → en el panel izquierdo selecciona **Archivo o página web existente**.
    - Navega hasta `C:\LabExcel\Lab01\` y selecciona el archivo **`empleados_datos.txt`**.
    - Haz clic en **Aceptar**.
+
+   ![Imagen práctica](../images/imagen%2021.png)
 
 6. **Hipervínculo 4 — Hacia una URL web:**
    - Haz clic derecho en la celda **`A6`** → **Vínculo** → **Archivo o página web existente**.
@@ -320,6 +373,8 @@ La hoja `Empleados` debe mostrar una tabla con:
      https://learn.microsoft.com/es-es/power-query/power-query-what-is-power-query
      ```
    - Haz clic en **Aceptar**.
+
+      ![Imagen práctica](../images/imagen%2022.png)
 
 7. Prueba cada hipervínculo haciendo **Ctrl + clic** sobre cada celda:
    - `A3` debe navegar a la hoja `Empleados`, celda `A1`.
@@ -345,7 +400,7 @@ La hoja `Empleados` debe mostrar una tabla con:
 
 > ⏱ **Tiempo estimado:** 5 minutos
 
-**Objetivo:** Configurar la inmovilización de filas y columnas de encabezado en la hoja `Empleados`, y crear dos vistas personalizadas del libro.
+**Objetivo:** Configurar la inmovilización de filas y columnas de encabezado en la hoja `Empleados`
 
 #### Instrucciones
 
@@ -355,41 +410,20 @@ La hoja `Empleados` debe mostrar una tabla con:
 
 2. Haz clic en la celda **`B2`** (la celda inmediatamente debajo y a la derecha de los encabezados que deseas inmovilizar: la fila 1 con los encabezados de columna y la columna A con los IDs).
 
+
 3. Ve a la pestaña **Vista** → grupo **Ventana** → **Inmovilizar paneles** → **Inmovilizar paneles** (la primera opción del submenú).
 
    > 💡 Aparecerá una línea horizontal debajo de la fila 1 y una línea vertical a la derecha de la columna A, indicando que esas filas/columnas están inmovilizadas.
 
+![Imagen práctica](../images/imagen%2023.png)
+
+
 4. Prueba el efecto: si la tabla fuera más grande, al desplazarte hacia abajo o hacia la derecha, la fila 1 y la columna A permanecerían visibles. Para simular esto, expande artificialmente la vista: mantén presionada la flecha hacia abajo durante unos segundos para desplazarte por debajo de los datos.
 
-**Crear vistas personalizadas:**
-
-5. Asegúrate de estar en la hoja `Empleados` con la inmovilización activa. Ve a la pestaña **Vista** → grupo **Vistas del libro** → **Vistas personalizadas**.
-
-6. En el cuadro de diálogo **Vistas personalizadas**, haz clic en **Agregar**.
-
-7. En el campo **Nombre**, escribe **`Vista_RRHH`** y asegúrate de que estén activadas las casillas **Configuración de impresión** y **Filas y columnas ocultas**. Haz clic en **Aceptar**.
-
-8. Ahora crea una segunda vista. Primero, oculta la columna `F` (Salario): haz clic derecho en el encabezado de la columna **F** → **Ocultar**.
-
-9. Ve a **Vista** → **Vistas personalizadas** → **Agregar** → escribe el nombre **`Vista_General`** → **Aceptar**.
-
-10. Prueba cambiar entre vistas: **Vista** → **Vistas personalizadas** → selecciona **`Vista_RRHH`** → **Mostrar**. La columna F (Salario) debe volver a ser visible.
-
-11. Cambia a la vista `Vista_General`: **Vista** → **Vistas personalizadas** → selecciona **`Vista_General`** → **Mostrar**. La columna F debe ocultarse nuevamente.
-
-12. Para continuar el laboratorio con todos los datos visibles, aplica la vista **`Vista_RRHH`**.
-
-#### Resultado esperado
-
-- La hoja `Empleados` tiene paneles inmovilizados (líneas de inmovilización visibles en fila 1 y columna A).
-- El cuadro de diálogo **Vistas personalizadas** lista dos vistas: `Vista_RRHH` y `Vista_General`.
-- Cambiar entre vistas alterna la visibilidad de la columna `Salario`.
 
 #### Verificación
 
 - [ ] Se observan líneas de inmovilización en la hoja `Empleados` (línea horizontal bajo la fila 1, línea vertical tras la columna A).
-- [ ] El cuadro de diálogo **Vistas personalizadas** muestra exactamente 2 vistas creadas.
-- [ ] La vista `Vista_RRHH` muestra todas las columnas; la vista `Vista_General` oculta la columna F.
 
 ---
 
@@ -403,6 +437,9 @@ La hoja `Empleados` debe mostrar una tabla con:
 
 1. Con la hoja **`Empleados`** activa, ve a la pestaña **Insertar** → grupo **Texto** → **Encabezado y pie de página**.
 
+![Imagen práctica](../images/imagen%2024.png)
+
+
    > Excel cambia a la vista **Diseño de página** y muestra tres secciones editables en el encabezado (izquierda, centro, derecha).
 
 2. **Sección izquierda del encabezado:** haz clic en la sección izquierda del encabezado y escribe:
@@ -414,6 +451,8 @@ La hoja `Empleados` debe mostrar una tabla con:
 
 4. **Sección derecha del encabezado:** haz clic en la sección derecha. En la cinta, haz clic en **Fecha actual** (inserta el código `&[Fecha]`).
 
+![Imagen práctica](../images/imagen%2025.png)
+
 5. Ahora configura el pie de página: haz clic en el botón **Ir al pie de página** en la cinta de opciones (pestaña **Diseño**).
 
 6. **Sección izquierda del pie de página:** escribe:
@@ -421,18 +460,25 @@ La hoja `Empleados` debe mostrar una tabla con:
    Confidencial - Uso interno
    ```
 
+![Imagen práctica](../images/imagen%2026.png)
+
 7. **Sección central del pie de página:** haz clic en **Número de página** (`&[Página]`), luego escribe ` de ` y haz clic en **Número de páginas** (`&[Páginas]`). El resultado será: `&[Página] de &[Páginas]`.
+
+![Imagen práctica](../images/imagen%2027.png)
 
 8. **Sección derecha del pie de página:** escribe:
    ```
    Lab01 - Excel 365
    ```
+![Imagen práctica](../images/imagen%2028.png)
 
 9. Haz clic en cualquier celda de la hoja para salir del modo de edición de encabezado/pie de página.
 
 10. Para verificar el resultado visual: pestaña **Vista** → **Diseño de página** (si no estás ya en esa vista). Deberías ver el encabezado y pie de página configurados en la parte superior e inferior de la hoja.
 
 11. Regresa a la vista normal: pestaña **Vista** → **Normal**.
+
+![Imagen práctica](../images/imagen%2029.png)
 
 #### Resultado esperado
 
@@ -459,18 +505,28 @@ La hoja `Empleados` debe mostrar una tabla con:
 
 2. Ve a la pestaña **Diseño de página** → grupo **Configurar página** → **Área de impresión** → **Establecer área de impresión**.
 
+![Imagen práctica](../images/imagen%2030.png)
+
    > Una línea discontinua aparece alrededor del rango seleccionado, indicando el área de impresión.
 
 3. Ahora configura los títulos de impresión (para que los encabezados de columna se repitan en cada página impresa si la tabla crece):
-   - Pestaña **Diseño de página** → **Títulos de impresión** (abre el cuadro de diálogo **Configurar página**, pestaña **Hoja**).
+   - Pestaña **Disposición de página** → **Imprimir Titulos** (abre el cuadro de diálogo **Configurar página**, pestaña **Hoja**).
    - En el campo **Repetir filas en el extremo superior**, haz clic en el botón de selección de rango (ícono de flecha roja) y selecciona la fila **1** (la fila de encabezados). El campo debe mostrar `$1:$1`.
    - Haz clic en **Aceptar**.
 
-4. Ajusta la orientación de la página: pestaña **Diseño de página** → **Orientación** → **Horizontal**.
+![Imagen práctica](../images/imagen%2031.png)
 
-5. Ajusta los márgenes: pestaña **Diseño de página** → **Márgenes** → **Estrecho**.
+4. Ajusta la orientación de la página: pestaña **Disposición de página** → **Orientación** → **Horizontal**.
 
-6. Configura el ajuste de escala: pestaña **Diseño de página** → grupo **Ajustar área de impresión** → en el campo **Ancho**, selecciona **1 página**; en **Alto**, selecciona **Automático**.
+![Imagen práctica](../images/imagen%2032.png)
+
+5. Ajusta los márgenes: pestaña **Disposición de página** → **Márgenes** → **Imprmir** → **Estrecho**.
+
+![Imagen práctica](../images/imagen%2033.png)
+
+6. Configura el ajuste de escala: pestaña **Disposición de página** → grupo **Ajuste de escala** → en el campo **Ancho**, selecciona **1 página**; en **Alto**, selecciona **Automático**.
+
+![Imagen práctica](../images/imagen%2034.png)
 
 7. Verifica la configuración en la vista previa: pestaña **Archivo** → **Imprimir** (o **Ctrl + P**). Revisa que la vista previa muestre la tabla completa en una sola página con los encabezados visibles. **No imprimas**; solo verifica la vista previa.
 
@@ -480,6 +536,8 @@ La hoja `Empleados` debe mostrar una tabla con:
 
 - La hoja `Empleados` tiene un área de impresión definida (visible como línea discontinua).
 - La vista previa de impresión muestra todos los datos en una sola página horizontal con los encabezados de columna en la parte superior.
+
+![Imagen práctica](../images/imagen%2035.png)
 
 #### Verificación
 
@@ -516,42 +574,17 @@ La hoja `Empleados` debe mostrar una tabla con:
 
 5. Haz clic en la flecha **← Atrás** para volver al libro.
 
-**Insertar comentarios en celdas:**
-
-6. En la hoja **`Empleados`**, haz clic en la celda **`F1`** (encabezado "Salario").
-
-7. Ve a la pestaña **Revisar** → grupo **Comentarios** → **Nuevo comentario**.
-
-   > En Excel 365, los "comentarios" son hilos de conversación. Si deseas una nota estática clásica, usa **Revisar** → **Notas** → **Nueva nota**.
-
-8. En el cuadro de comentario que aparece, escribe:
-   ```
-   Salario anual bruto en euros. Datos actualizados a enero 2024.
-   ```
-   Haz clic fuera del comentario para cerrarlo.
-
-9. Agrega una nota en la celda **`G1`** (encabezado "FechaIngreso"):
-   - **Revisar** → **Notas** → **Nueva nota** → escribe:
-     ```
-     Formato DD/MM/AAAA. Fecha de inicio del contrato.
-     ```
-   - Haz clic fuera para cerrar.
-
-10. Guarda el libro: **Ctrl + S**.
 
 #### Resultado esperado
 
+![Imagen práctica](../images/imagen%2036.png)
+
 - Las propiedades del libro están completadas (visible desde **Archivo → Información**).
-- La celda `F1` tiene un indicador de comentario (triángulo morado en la esquina superior derecha).
-- La celda `G1` tiene un indicador de nota (triángulo rojo en la esquina superior derecha).
+
 
 #### Verificación
 
 - [ ] Desde **Archivo → Información**, el campo "Etiquetas" muestra las palabras clave configuradas.
-- [ ] Al pasar el cursor sobre la celda `F1`, aparece el comentario con el texto sobre salario.
-- [ ] Al pasar el cursor sobre la celda `G1`, aparece la nota con el texto sobre el formato de fecha.
-- [ ] El libro está guardado (la barra de título no muestra asterisco ni indicador de cambios no guardados).
-
 ---
 
 ## Validación y Pruebas Finales
@@ -563,17 +596,15 @@ Antes de dar por completada la práctica, realiza las siguientes verificaciones 
 | # | Verificación | Resultado esperado | ✓ |
 |---|---|---|---|
 | 1 | **Estructura del libro** | El libro tiene exactamente 3 hojas: `Índice`, `Empleados`, `DatosOnline` (en ese orden) | ☐ |
-| 2 | **Datos importados** | La hoja `Empleados` contiene 10 filas de datos con 7 columnas correctamente tipadas | ☐ |
+| 2 | **Datos importados** | La hoja `Empleados` contiene 11 filas de datos con 7 columnas correctamente tipadas | ☐ |
 | 3 | **Conexiones activas** | **Datos → Consultas y conexiones** muestra 2 consultas activas | ☐ |
 | 4 | **Rangos con nombre** | **Fórmulas → Administrador de nombres** muestra `TablaEmpleados` y `Salarios` | ☐ |
 | 5 | **Hipervínculos** | Las 4 celdas de la hoja `Índice` tienen hipervínculos funcionales | ☐ |
 | 6 | **Inmovilización** | La hoja `Empleados` tiene paneles inmovilizados (fila 1 y columna A) | ☐ |
-| 7 | **Vistas personalizadas** | Existen 2 vistas personalizadas: `Vista_RRHH` y `Vista_General` | ☐ |
-| 8 | **Encabezado/pie de página** | La hoja `Empleados` tiene encabezado y pie de página configurados | ☐ |
-| 9 | **Área de impresión** | La vista previa de impresión muestra la tabla en una sola página horizontal | ☐ |
-| 10 | **Propiedades del libro** | **Archivo → Información** muestra título y etiquetas configuradas | ☐ |
-| 11 | **Comentarios** | Las celdas `F1` y `G1` tienen comentario/nota visible al pasar el cursor | ☐ |
-| 12 | **Archivo guardado** | El libro está guardado como `Lab01_GestionLibros.xlsx` en `C:\LabExcel\Lab01\` | ☐ |
+| 7 | **Encabezado/pie de página** | La hoja `Empleados` tiene encabezado y pie de página configurados | ☐ |
+| 8 | **Área de impresión** | La vista previa de impresión muestra la tabla en una sola página horizontal | ☐ |
+| 9 | **Propiedades del libro** | **Archivo → Información** muestra título y etiquetas configuradas | ☐ |
+| 10 | **Archivo guardado** | El libro está guardado como `Lab01_GestionLibros.xlsx` en `C:\LabExcel\Lab01\` | ☐ |
 
 ### Prueba de integridad de la conexión
 
@@ -677,4 +708,4 @@ En esta práctica aplicaste un conjunto completo de habilidades de gestión de l
 - [Definir y usar nombres en fórmulas — Microsoft Support](https://support.microsoft.com/es-es/office/definir-y-usar-nombres-en-f%C3%B3rmulas-4d0f13ac-53b7-422e-afd2-abd7ff379c64)
 
 ---
-*Lab 01-00-01 | Curso Excel 365 Intermedio | Duración: 36 minutos*
+*Lab 01-00-01 | Curso Excel 365 Intermedio | Duración: 25 minutos*
