@@ -4,12 +4,12 @@
 
 | Campo | Detalle |
 |---|---|
-| **Duración estimada** | 48 minutos |
+| **Duración estimada** | 25 minutos |
 | **Complejidad** | Media |
 | **Nivel Bloom** | Aplicar (*Apply*) |
 | **Módulo** | 2 — Manipulación de celdas y rangos de datos |
 | **Versión de Excel requerida** | Microsoft 365 (versión 2308 o superior) |
-| **Archivo de práctica** | `Lab02-VentasRegionales.xlsx` (descargado desde OneDrive del curso) |
+| **Archivo de práctica** | [Lab02-VentasRegionales (1).xlsx](./Lab02-VentasRegionales%20(1).xlsx)
 
 ---
 
@@ -44,7 +44,7 @@ Al finalizar esta práctica, serás capaz de:
 
 ### Acceso y recursos
 - Cuenta de Microsoft 365 activa con acceso a Excel en escritorio (no versión web para esta práctica).
-- Archivo `Lab02-VentasRegionales.xlsx` disponible en tu carpeta de OneDrive del curso (`Curso Excel Intermedio > Módulo 2`).
+- Archivo [Lab02-VentasRegionales (1).xlsx](./Lab02-VentasRegionales%20(1).xlsx) 
 - Conexión a Internet estable (mínimo 10 Mbps) para sincronización con OneDrive.
 
 ---
@@ -94,16 +94,20 @@ Antes de comenzar los pasos de la práctica, realiza estas verificaciones:
 
 #### Instrucciones
 
-1. Con el archivo `Lab02-VentasRegionales.xlsx` abierto, observa las hojas disponibles en la parte inferior. Deberías ver al menos las hojas: **`Ventas_Q1`**, **`Ventas_Q2`** y **`Resumen`**.
+1. Con el archivo [Lab02-VentasRegionales (1).xlsx](./Lab02-VentasRegionales%20(1).xlsx)  abierto, observa las hojas disponibles en la parte inferior. Deberías ver al menos las hojas: **`Ventas_Q1`**, **`Ventas_Q2`** y **`Resumen`**.
+
+![Imagen práctica](../images/imagen%2037.png)
 
 2. Haz clic en la hoja **`Ventas_Q1`**. Observa su estructura:
    - **Columna A:** Nombres de regiones (Norte, Sur, Este, Oeste, Centro).
    - **Columnas B a D:** Ventas de los meses Enero, Febrero y Marzo (con fórmulas que calculan los totales).
    - **Columna E:** Total trimestral calculado con `=SUMA(B2:D2)`.
 
-3. Selecciona el rango **`B2:E6`** (ventas y totales de las 5 regiones).
+3. Selecciona el rango **`B3:E7`** (ventas y totales de las 5 regiones).
 
-4. Copia el rango con **Ctrl+C**. Verás el borde parpadeante ("hormiguero") alrededor del rango copiado.
+4. Copia el rango con **Ctrl+C**. Verás el borde parpadeante alrededor del rango copiado.
+
+![Imagen práctica](../images/imagen%2038.png)
 
 5. Haz clic en la celda **`B10`** para establecer el destino del pegado.
 
@@ -111,9 +115,15 @@ Antes de comenzar los pasos de la práctica, realiza estas verificaciones:
 
 7. En el cuadro de diálogo, selecciona la opción **Valores** y haz clic en **Aceptar**.
 
+![Imagen práctica](../images/imagen%2039.png)
+
 8. Haz clic en cualquier celda del rango **`B10:E14`** y observa la barra de fórmulas. Confirma que muestra solo un número (no una fórmula).
 
-9. Compara con una celda del rango original (por ejemplo, `E2`): la barra de fórmulas debe mostrar `=SUMA(B2:D2)`. La copia en `E11` debe mostrar solo el valor numérico equivalente.
+
+
+9. Compara con una celda del rango original (por ejemplo, `E3`): la barra de fórmulas debe mostrar `=SUMA(B2:D2)`. La copia en `E10` debe mostrar solo el valor numérico equivalente.
+
+![Imagen práctica](../images/imagen%2040.png)
 
 10. Presiona **Escape** para limpiar el portapapeles (el borde parpadeante desaparecerá).
 
@@ -121,12 +131,12 @@ Antes de comenzar los pasos de la práctica, realiza estas verificaciones:
 
 #### Resultado esperado
 
-El rango `B10:E14` contiene los mismos números que `B2:E6`, pero sin fórmulas. Al hacer clic en cualquier celda de `B10:E14`, la barra de fórmulas muestra únicamente el valor numérico.
+El rango `B10:E14` contiene los mismos números que `B3:E7`, pero sin fórmulas. Al hacer clic en cualquier celda de `B10:E14`, la barra de fórmulas muestra únicamente el valor numérico.
 
 #### Verificación
 
-- Haz clic en la celda `E11`. La barra de fórmulas debe mostrar un número (por ejemplo, `87450`), **no** una fórmula.
-- Haz clic en la celda `E2`. La barra de fórmulas debe mostrar `=SUMA(B2:D2)`.
+- Haz clic en la celda `E10`. La barra de fórmulas debe mostrar un número (por ejemplo, `145700`), **no** una fórmula.
+- Haz clic en la celda `E3`. La barra de fórmulas debe mostrar `=SUMA(B3:D3)`.
 - Ambas celdas deben mostrar el mismo número en la hoja.
 
 ---
@@ -141,7 +151,7 @@ El rango `B10:E14` contiene los mismos números que `B2:E6`, pero sin fórmulas.
 
 **Parte A — Pegado de solo formatos:**
 
-1. En la hoja **`Ventas_Q1`**, selecciona el rango **`A1:E1`** (fila de encabezados con formato de color, negrita y bordes).
+1. En la hoja **`Ventas_Q1`**, selecciona el rango **`A2:E2`** (fila de encabezados con formato de color, negrita y bordes).
 
 2. Copia con **Ctrl+C**.
 
@@ -151,20 +161,24 @@ El rango `B10:E14` contiene los mismos números que `B2:E6`, pero sin fórmulas.
 
 5. Selecciona **Formatos** y haz clic en **Aceptar**.
 
+![Imagen práctica](../images/imagen%2041.png)
+
 6. Escribe manualmente los encabezados en las celdas `A9` a `E9`:
    - `A9`: `Región`
    - `B9`: `Enero`
    - `C9`: `Febrero`
    - `D9`: `Marzo`
-   - `E9`: `Total`
+   - `E9`: `TotalQ1`
 
 7. Observa que las celdas `A9:E9` ahora tienen el mismo formato visual (color de fondo, negrita, bordes) que la fila 1, pero con el texto que tú escribiste.
+
+![Imagen práctica](../images/imagen%2042.png)
 
 8. Presiona **Escape** para limpiar el portapapeles.
 
 **Parte B — Transponer una tabla:**
 
-1. Selecciona el rango **`A1:E6`** (tabla completa con encabezados y datos).
+1. Selecciona el rango **`A2:E7`** (tabla completa con encabezados y datos).
 
 2. Copia con **Ctrl+C**.
 
@@ -174,7 +188,10 @@ El rango `B10:E14` contiene los mismos números que `B2:E6`, pero sin fórmulas.
 
 5. En el cuadro de diálogo, marca la casilla **Transponer** (en la esquina inferior derecha del cuadro) y selecciona **Valores** en la sección "Pegar". Haz clic en **Aceptar**.
 
+
 6. Observa el resultado: lo que antes eran 5 filas de regiones ahora son 5 columnas, y lo que eran 4 columnas (Enero, Feb, Mar, Total) ahora son 4 filas.
+
+![Imagen práctica](../images/imagen%2043.png)
 
 7. Presiona **Escape**.
 
@@ -209,12 +226,16 @@ El rango `B10:E14` contiene los mismos números que `B2:E6`, pero sin fórmulas.
    - Arrastra el controlador de relleno hacia abajo hasta la celda **`A13`** (12 semanas en total).
    - Verifica que Excel completó la serie con incrementos de 7 días (fechas de los lunes).
 
+   ![Imagen práctica](../images/imagen%2044.png)
+
 3. **Serie de identificadores de texto:**
    - En la celda **`B2`**, escribe: `Semana-01` y presiona **Enter**.
    - En la celda **`B3`**, escribe: `Semana-02` y presiona **Enter**.
    - Selecciona **`B2:B3`**.
    - Arrastra el controlador de relleno hacia abajo hasta **`B13`**.
    - Excel debe completar la serie: `Semana-03`, `Semana-04`… hasta `Semana-12`.
+
+   ![Imagen práctica](../images/imagen%2045.png)
 
 4. **Serie numérica con incremento personalizado:**
    - En la celda **`C2`**, escribe: `100`.
@@ -223,17 +244,21 @@ El rango `B10:E14` contiene los mismos números que `B2:E6`, pero sin fórmulas.
    - Arrastra el controlador de relleno hacia abajo hasta **`C13`**.
    - Excel debe completar la serie: `130`, `145`, `160`… (incremento de 15).
 
+   ![Imagen práctica](../images/imagen%2046.png)
+
 5. **Autorrelleno de meses:**
    - En la celda **`D2`**, escribe: `Enero`.
    - Selecciona solo **`D2`** (una sola celda).
    - Arrastra el controlador de relleno hacia abajo hasta **`D13`**.
-   - Excel debe completar automáticamente: `Febrero`, `Marzo`… hasta `Diciembre` y luego `Enero` nuevamente.
+   - Excel debe completar automáticamente: `Febrero`, `Marzo`… hasta `Diciembre` 
 
 6. Escribe el encabezado en la fila 1 para cada columna:
    - `A1`: `Fecha`
    - `B1`: `Semana`
    - `C1`: `Meta`
    - `D1`: `Mes`
+
+ ![Imagen práctica](../images/imagen%2047.png)
 
 #### Resultado esperado
 
@@ -276,6 +301,8 @@ Las columnas A a D contienen 12 filas de datos (filas 2 a 13) con series correct
    - Esta fórmula genera 10 números en 1 columna, comenzando en 1001 con incremento de 1 (1001, 1002… 1010).
    - Observa que Excel rellena automáticamente las celdas `F2:F11` con el resultado (función dinámica de desbordamiento).
 
+![Imagen práctica](../images/imagen%2048.png)
+
 4. **Ingresar nombres de región manualmente:**
    - En las celdas `G2:G11`, escribe los siguientes valores (2 por región):
      - `G2` y `G3`: `Norte`
@@ -295,6 +322,8 @@ Las columnas A a D contienen 12 filas de datos (filas 2 a 13) con series correct
    - Pega con **Ctrl+V**.
    - Cada celda del rango tendrá un valor aleatorio entre 20,000 y 150,000.
 
+   ![Imagen práctica](../images/imagen%2049.png)
+
 6. **Observar el comportamiento dinámico:**
    - Presiona **F9** (recalcular). Observa cómo todos los valores de `ALEATORIO.ENTRE()` cambian.
    - Esto es normal. Tus valores serán diferentes a los de tus compañeros.
@@ -306,9 +335,13 @@ Las columnas A a D contienen 12 filas de datos (filas 2 a 13) con series correct
    - Selecciona **Valores** y haz clic en **Aceptar**.
    - Ahora los valores son fijos. Presiona **F9** para confirmar que ya no cambian.
 
+![Imagen práctica](../images/imagen%2050.png)
+
 8. **Aplicar formato de número a las ventas:**
    - Selecciona el rango **`H2:J11`**.
    - Ve a la pestaña **Inicio** → grupo **Número** → haz clic en el botón **Formato de número de contabilidad** (símbolo `$`) o selecciona **Número** con separador de miles desde el menú desplegable de formatos.
+
+   ![Imagen práctica](../images/imagen%2051.png)
 
 #### Resultado esperado
 
@@ -337,7 +370,11 @@ La tabla en `F1:J11` contiene: IDs del 1001 al 1010 generados por `SECUENCIA()`,
 
 2. Haz clic derecho sobre la selección y elige **Insertar** del menú contextual. Se insertará una fila en blanco encima de la fila 6, y todos los datos debajo se desplazarán una fila hacia abajo.
 
+![Imagen práctica](../images/imagen%2052.png)
+
 3. En la nueva fila 6 (que quedó en blanco), escribe en la celda `G6`: `Este` (para completar el par de la región Este que quedó separada).
+
+![Imagen práctica](../images/imagen%2053.png)
 
    > Nota: Si los datos de región quedaron desalineados por la inserción, ajusta los valores en la columna G para que el par de cada región esté en filas consecutivas.
 
@@ -349,15 +386,23 @@ La tabla en `F1:J11` contiene: IDs del 1001 al 1010 generados por `SECUENCIA()`,
 
 6. En la celda **`G1`** (nueva columna vacía), escribe: `Vendedor`.
 
+![Imagen práctica](../images/imagen%2054.png)
+
 7. En las celdas `G2:G12`, escribe nombres de vendedor (puedes inventarlos, por ejemplo: `Ana López`, `Carlos Ruiz`, etc., uno por fila).
 
 **Eliminar una fila:**
 
 8. Haz clic en el número de la **última fila de datos** que corresponde a la región Centro (aproximadamente fila 12 o 13, dependiendo de los desplazamientos anteriores). Selecciona esa fila completa.
 
+![Imagen práctica](../images/imagen%2055.png)
+
 9. Haz clic derecho y elige **Eliminar**. La fila se elimina y los datos de abajo suben.
 
 10. Verifica que la tabla de datos sigue teniendo exactamente **10 registros** (filas 2 a 11) después de los ajustes.
+
+11. Agrega valores aleatorios a los huecos del registro que quedaba en blanco y copialos como valores
+
+![Imagen práctica](../images/imagen%2056.png)
 
 #### Resultado esperado
 
@@ -387,9 +432,13 @@ La tabla de datos en la hoja `Resumen` tiene una columna `Vendedor` insertada en
 
 3. En la galería que aparece, selecciona el estilo **"Encabezado 1"** (o el estilo de encabezado que prefieras de la sección "Títulos y encabezados").
 
+![Imagen práctica](../images/imagen%2057.png)
+
 4. Selecciona el rango de datos **`F2:K11`** (todas las filas de datos).
 
 5. En la misma galería de **Estilos de celda**, selecciona el estilo **"20% - Énfasis 1"** (un color de fondo suave) para dar un tono diferente a los datos.
+
+![Imagen práctica](../images/imagen%2058.png)
 
 **Configurar alineación:**
 
@@ -400,7 +449,11 @@ La tabla de datos en la hoja `Resumen` tiene una columna `Vendedor` insertada en
    - **Centrar en vertical** (alineación vertical).
    - **Ajustar texto** (para que los encabezados largos no se corten).
 
+![Imagen práctica](../images/imagen%2059.png)
+
 8. Selecciona las celdas de la columna de IDs (`F2:F11`) y aplica **alineación centrada**.
+
+![Imagen práctica](../images/imagen%2060.png)
 
 **Agrupar hojas para aplicar encabezados simultáneamente:**
 
@@ -413,6 +466,8 @@ La tabla de datos en la hoja `Resumen` tiene una columna `Vendedor` insertada en
 12. Escribe: `Reporte de Ventas Trimestrales` y presiona **Enter**.
 
 13. Aplica el estilo **"Título"** desde la galería de Estilos de celda.
+
+![Imagen práctica](../images/imagen%2061.png)
 
 14. Para desagrupar las hojas, haz clic derecho sobre cualquier pestaña de hoja y selecciona **Desagrupar hojas**, o simplemente haz clic en una pestaña que no esté en el grupo.
 
@@ -444,22 +499,29 @@ La tabla de datos en la hoja `Resumen` tiene una columna `Vendedor` insertada en
 
 3. Escribe el nombre: `Ventas_Q1_Datos` y presiona **Enter**. El rango queda nombrado.
 
-4. Selecciona el rango **`E2:E6`** (columna de totales trimestrales).
+![Imagen práctica](../images/imagen%2062.png)
+
+4. Selecciona el rango **`E3:E7`** (columna de totales trimestrales).
 
 5. En el **Cuadro de nombres**, escribe: `Totales_Q1` y presiona **Enter**.
+
 
 6. **Verificar los rangos nombrados en el Administrador de nombres:**
    - Ve a la pestaña **Fórmulas** → grupo **Nombres definidos** → haz clic en **Administrador de nombres**.
    - Confirma que aparecen `Ventas_Q1_Datos` y `Totales_Q1` en la lista.
    - Cierra el Administrador de nombres.
 
+   ![Imagen práctica](../images/imagen%2063.png)
+
 7. **Usar los rangos nombrados en fórmulas:**
    - Haz clic en la celda **`G2`** de la hoja `Ventas_Q1` (o cualquier celda vacía disponible).
    - Escribe la siguiente fórmula y presiona **Enter**:
      ```
-     =SUMA(Ventas_Q1_Datos)
+     =SUMA(Totales_Q1)
      ```
    - Esta fórmula suma todas las ventas del trimestre usando el nombre del rango en lugar de la referencia de celdas.
+
+   ![Imagen práctica](../images/imagen%2064.png)
 
 8. En la celda **`G3`**, escribe:
    ```
@@ -467,9 +529,9 @@ La tabla de datos en la hoja `Resumen` tiene una columna `Vendedor` insertada en
    ```
    Esta fórmula calcula el promedio de los totales por región.
 
-9. Agrega etiquetas descriptivas:
-   - `F2`: `Total General Q1:`
-   - `F3`: `Promedio por Región:`
+   ![Imagen práctica](../images/imagen%2065.png)
+
+
 
 #### Resultado esperado
 
@@ -477,7 +539,7 @@ El Administrador de nombres muestra los rangos `Ventas_Q1_Datos` y `Totales_Q1` 
 
 #### Verificación
 
-- Haz clic en `G2`. La barra de fórmulas debe mostrar `=SUMA(Ventas_Q1_Datos)`.
+- Haz clic en `G2`. La barra de fórmulas debe mostrar `=SUMA(Totales_Q1)`.
 - Haz clic en `G3`. La barra de fórmulas debe mostrar `=PROMEDIO(Totales_Q1)`.
 - Abre el Administrador de nombres (`Fórmulas → Administrador de nombres`) y confirma que ambos rangos están listados con sus referencias correctas.
 
@@ -491,43 +553,41 @@ El Administrador de nombres muestra los rangos `Ventas_Q1_Datos` y `Totales_Q1` 
 
 #### Instrucciones
 
-1. En la hoja **`Ventas_Q1`**, haz clic en la celda **`F2`** (debe estar vacía; si no lo está, usa la siguiente columna disponible después de los datos).
+1. En la hoja **`Ventas_Q1`**, haz clic en la celda **`F3`** (debe estar vacía; si no lo está, usa la siguiente columna disponible después de los datos).
 
 2. Ve a la pestaña **Insertar** → grupo **Minigráficos** → haz clic en **Línea**.
 
 3. En el cuadro de diálogo **Crear minigráficos**:
-   - **Rango de datos:** Selecciona `B2:D2` (ventas de Enero, Febrero, Marzo para la primera región).
-   - **Rango de ubicación:** Confirma que dice `$F$2`.
+   - **Rango de datos:** Selecciona `B3:D3` (ventas de Enero, Febrero, Marzo para la primera región).
+   - **Rango de ubicación:** Confirma que dice `$F$3`.
    - Haz clic en **Aceptar**.
 
-4. Haz clic en la celda `F2` que ahora contiene el minigráfico.
+   ![Imagen práctica](../images/imagen%2066.png)
 
-5. Arrastra el **controlador de relleno** de `F2` hacia abajo hasta `F6` para crear minigráficos para las 5 regiones. Excel ajustará automáticamente el rango de datos de cada minigráfico.
+4. Haz clic en la celda `F3` que ahora contiene el minigráfico.
+
+5. Arrastra el **controlador de relleno** de `F3` hacia abajo hasta `F7` para crear minigráficos para las 5 regiones. Excel ajustará automáticamente el rango de datos de cada minigráfico.
 
 6. **Personalizar los minigráficos:**
-   - Con los minigráficos `F2:F6` seleccionados, aparecerá la pestaña contextual **Minigráfico** en la cinta de opciones.
+   - Con los minigráficos `F3:F7` seleccionados, aparecerá la pestaña contextual **Minigráfico** en la cinta de opciones.
    - En el grupo **Mostrar**, activa las casillas: **Punto alto** y **Punto bajo**.
    - En el grupo **Estilo**, selecciona un estilo de color que contraste bien (por ejemplo, el estilo de color naranja o azul oscuro).
 
-7. **Agregar un encabezado:**
-   - En la celda `F1`, escribe: `Tendencia`.
+   ![Imagen práctica](../images/imagen%2067.png)
 
-8. **Insertar un minigráfico de columna** para comparar:
-   - Haz clic en la celda **`G2`**.
-   - Ve a **Insertar → Minigráficos → Columna**.
-   - Rango de datos: `B2:D2`. Ubicación: `$G$2`.
-   - Haz clic en **Aceptar**.
-   - Arrastra el controlador de relleno de `G2` hasta `G6`.
-   - En la celda `G1`, escribe: `Comparativa`.
+7. **Agregar un encabezado:**
+   - En la celda `F2`, escribe: `Tendencia`.
+
 
 #### Resultado esperado
 
-Las columnas F y G de la hoja `Ventas_Q1` contienen minigráficos de línea y columna respectivamente para cada una de las 5 regiones. Los minigráficos de línea muestran marcadores en los puntos más alto y más bajo.
+Las columnas F de la hoja `Ventas_Q1` contiene minigráficos de línea. Los minigráficos de línea muestran marcadores en los puntos más alto y más bajo.
+
+![Imagen práctica](../images/imagen%2068.png)
 
 #### Verificación
 
-- Haz clic en la celda `F2`. La pestaña contextual **Minigráfico** debe aparecer en la cinta de opciones.
-- Los minigráficos deben mostrar una tendencia visible (línea ascendente, descendente o variable) que refleje los datos de ventas de cada región.
+- Haz clic en la celda `F3`. La pestaña contextual **Minigráfico** debe aparecer en la cinta de opciones.
 - Los puntos alto y bajo deben estar marcados con un color diferente en los minigráficos de línea.
 
 ---
@@ -542,31 +602,40 @@ Las columnas F y G de la hoja `Ventas_Q1` contienen minigráficos de línea y co
 
 **Escala de color en ventas de Enero:**
 
-1. En la hoja **`Ventas_Q1`**, selecciona el rango **`B2:B6`** (ventas de Enero para las 5 regiones).
+1. En la hoja **`Ventas_Q1`**, selecciona el rango **`B3:B7`** (ventas de Enero para las 5 regiones).
 
 2. Ve a la pestaña **Inicio** → grupo **Estilos** → haz clic en **Formato condicional**.
 
 3. En el menú desplegable, selecciona **Escalas de color** y elige la escala **Verde - Amarillo - Rojo** (la primera opción de la galería). Los valores más altos aparecerán en verde y los más bajos en rojo.
 
+![Imagen práctica](../images/imagen%2069.png)
+
 **Barras de datos en ventas de Febrero:**
 
-4. Selecciona el rango **`C2:C6`** (ventas de Febrero).
+4. Selecciona el rango **`C3:C7`** (ventas de Febrero).
 
 5. Ve a **Formato condicional → Barras de datos** y selecciona **Relleno degradado: Azul** (o el color que prefieras).
 
 6. Las celdas mostrarán barras proporcionales al valor de cada celda.
 
+![Imagen práctica](../images/imagen%2070.png)
+
 **Conjunto de iconos en los totales:**
 
-7. Selecciona el rango **`E2:E6`** (totales trimestrales).
+7. Selecciona el rango **`E3:E7`** (totales trimestrales).
 
 8. Ve a **Formato condicional → Conjuntos de iconos** y selecciona el conjunto de **3 flechas (de colores)** (flecha verde hacia arriba, amarilla horizontal, roja hacia abajo).
+
+![Imagen práctica](../images/imagen%2071.png)
+
 
 **Verificar y administrar las reglas:**
 
 9. Con el rango `E2:E6` aún seleccionado, ve a **Formato condicional → Administrar reglas**.
 
 10. Confirma que la regla de iconos aparece en la lista. Haz clic en **Editar regla** para explorar las opciones de configuración (umbrales porcentuales). No es necesario modificarlas; solo observa la configuración. Haz clic en **Cancelar** para cerrar sin cambios.
+
+![Imagen práctica](../images/imagen%2072.png)
 
 11. Haz clic en **Cerrar** para cerrar el Administrador de reglas.
 
@@ -580,7 +649,7 @@ Las columnas F y G de la hoja `Ventas_Q1` contienen minigráficos de línea y co
 
 - La región con el mayor total en la columna E debe mostrar una flecha verde apuntando hacia arriba.
 - La región con el menor total en la columna E debe mostrar una flecha roja apuntando hacia abajo.
-- Al pasar el cursor sobre cualquier celda de `B2:B6`, debe ser evidente cuál tiene el color más verde (valor más alto) y cuál tiene el color más rojo (valor más bajo).
+- Al pasar el cursor sobre cualquier celda de `B3:B7`, debe ser evidente cuál tiene el color más verde (valor más alto) y cuál tiene el color más rojo (valor más bajo).
 
 ---
 
@@ -697,8 +766,8 @@ En esta práctica aplicaste un conjunto completo de técnicas intermedias de man
 | Datos dinámicos | `SECUENCIA()` y `ALEATORIO.ENTRE()` | Tabla de 10 registros con IDs y ventas simuladas |
 | Estructura de datos | Insertar/eliminar filas y columnas | Tabla reorganizada con columna `Vendedor` |
 | Presentación visual | Estilos de celda y agrupación de hojas | Encabezados uniformes en múltiples hojas simultáneamente |
-| Legibilidad de fórmulas | Rangos nombrados + Administrador de nombres | Fórmulas `=SUMA(Ventas_Q1_Datos)` más legibles |
-| Visualización de tendencias | Minigráficos de línea y columna | Tendencias visibles por región dentro de celdas |
+| Legibilidad de fórmulas | Rangos nombrados + Administrador de nombres | Fórmulas `=SUMA(Totales_Q1)` más legibles |
+| Visualización de tendencias | Minigráfico de línea | Tendencias visibles por región dentro de celdas |
 | Análisis visual | Formato condicional (escalas, barras, iconos) | Identificación inmediata de valores altos y bajos |
 
 ### Conceptos clave para recordar
