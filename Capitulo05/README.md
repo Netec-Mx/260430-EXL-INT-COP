@@ -1,4 +1,4 @@
-# Creación y Gestión de Gráficos
+# Práctica 5: Creación y Gestión de Gráficos
 
 ## Metadatos
 
