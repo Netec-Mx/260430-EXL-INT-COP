@@ -4,7 +4,7 @@
 
 | Campo | Detalle |
 |---|---|
-| **Duración estimada** | 25 minutos |
+| **Duración estimada** | 15 minutos |
 | **Complejidad** | Media |
 | **Nivel Bloom** | Aplicar (*Apply*) |
 | **Módulo** | 2 — Manipulación de celdas y rangos de datos |
@@ -90,8 +90,6 @@ Antes de comenzar los pasos de la práctica, realiza estas verificaciones:
 
 **Objetivo:** Familiarizarse con la estructura del libro y practicar el pegado de solo valores para eliminar dependencias de fórmulas en una copia de los datos.
 
-**Duración estimada:** 8 minutos
-
 #### Instrucciones
 
 1. Con el archivo [Lab02-VentasRegionales (1).xlsx](./Lab02-VentasRegionales%20(1).xlsx)  abierto, observa las hojas disponibles en la parte inferior. Deberías ver al menos las hojas: **`Ventas_Q1`**, **`Ventas_Q2`** y **`Resumen`**.
@@ -144,8 +142,6 @@ El rango `B10:E14` contiene los mismos números que `B3:E7`, pero sin fórmulas.
 ### Paso 2 — Aplicar Pegado Especial de Formatos y Transponer datos
 
 **Objetivo:** Usar pegado especial para copiar únicamente el formato visual de un rango y transponer una tabla de filas a columnas.
-
-**Duración estimada:** 7 minutos
 
 #### Instrucciones
 
@@ -212,8 +208,6 @@ El rango `B10:E14` contiene los mismos números que `B3:E7`, pero sin fórmulas.
 
 **Objetivo:** Usar el controlador de relleno para completar automáticamente series de fechas, números y texto con patrones personalizados.
 
-**Duración estimada:** 7 minutos
-
 #### Instrucciones
 
 1. Haz clic en la hoja **`Resumen`** en la parte inferior de la pantalla.
@@ -276,8 +270,6 @@ Las columnas A a D contienen 12 filas de datos (filas 2 a 13) con series correct
 ### Paso 4 — Generar datos de prueba con `ALEATORIO.ENTRE()` y `SECUENCIA()`
 
 **Objetivo:** Crear una tabla de datos de ventas simuladas usando funciones dinámicas de Excel 365 para poblar rangos automáticamente.
-
-**Duración estimada:** 8 minutos
 
 > **Nota:** `SECUENCIA()` y `ALEATORIO.ENTRE()` son funciones de Microsoft 365. Si tu versión de Excel no las reconoce, notifica a tu instructor.
 
@@ -360,8 +352,6 @@ La tabla en `F1:J11` contiene: IDs del 1001 al 1010 generados por `SECUENCIA()`,
 
 **Objetivo:** Practicar la inserción y eliminación de filas y columnas desplazando datos correctamente sin romper la estructura de la hoja.
 
-**Duración estimada:** 5 minutos
-
 #### Instrucciones
 
 **Insertar una fila:**
@@ -419,8 +409,6 @@ La tabla de datos en la hoja `Resumen` tiene una columna `Vendedor` insertada en
 ### Paso 6 — Aplicar estilos de celda, alineación y agrupar hojas
 
 **Objetivo:** Mejorar la presentación visual de los datos usando estilos predefinidos, configurar alineación y aplicar cambios simultáneos en múltiples hojas mediante agrupación.
-
-**Duración estimada:** 6 minutos
 
 #### Instrucciones
 
@@ -489,8 +477,6 @@ La tabla de datos en la hoja `Resumen` tiene una columna `Vendedor` insertada en
 
 **Objetivo:** Definir rangos nombrados para las áreas principales de datos y referenciarlos en fórmulas para mejorar la legibilidad.
 
-**Duración estimada:** 5 minutos
-
 #### Instrucciones
 
 1. Ve a la hoja **`Ventas_Q1`** y selecciona el rango **`B2:D6`** (ventas de Enero, Febrero y Marzo para las 5 regiones, sin encabezados ni totales).
@@ -549,8 +535,6 @@ El Administrador de nombres muestra los rangos `Ventas_Q1_Datos` y `Totales_Q1` 
 
 **Objetivo:** Insertar minigráficos de línea para visualizar la tendencia de ventas mensual por región directamente dentro de las celdas.
 
-**Duración estimada:** 4 minutos
-
 #### Instrucciones
 
 1. En la hoja **`Ventas_Q1`**, haz clic en la celda **`F3`** (debe estar vacía; si no lo está, usa la siguiente columna disponible después de los datos).
@@ -596,7 +580,6 @@ Las columnas F de la hoja `Ventas_Q1` contiene minigráficos de línea. Los mini
 
 **Objetivo:** Configurar reglas de formato condicional con escalas de color, barras de datos y conjuntos de iconos para identificar visualmente los valores más altos y más bajos en la tabla de ventas.
 
-**Duración estimada:** 5 minutos
 
 #### Instrucciones
 
