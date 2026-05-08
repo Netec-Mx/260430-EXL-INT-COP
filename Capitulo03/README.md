@@ -4,7 +4,7 @@
 
 | Atributo | Detalle |
 |---|---|
-| **Duración estimada** | 36 minutos |
+| **Duración estimada** | 20 minutos |
 | **Complejidad** | Fácil |
 | **Nivel de Bloom** | Aplicar |
 | **Módulo / Capítulo** | Capítulo 3 — Gestión de Tablas y Datos Tabulares |
@@ -47,7 +47,7 @@ Al finalizar esta práctica, serás capaz de:
 | Requisito | Detalle |
 |---|---|
 | Cuenta Microsoft 365 | Activa con acceso a Excel 365 (versión 2308 o superior recomendada) |
-| Archivo de práctica | `Lab03_Inventario_Productos.xlsx` (proporcionado por el instructor) |
+| Archivo de práctica | - Archivo [Lab03_Inventario_Productos(1).xlsx](./Lab03_Inventario_Productos(1).xlsx)|
 | Acceso a OneDrive | Recomendado para guardar el archivo (no obligatorio en esta práctica) |
 
 > **Nota para el instructor:** Esta práctica no requiere licencia de Copilot. Sin embargo, si algún estudiante tiene Excel en inglés, deberá usar los equivalentes en inglés para las funciones (SUM, AVERAGE, COUNT, MAX, MIN). Aclarar esto antes de iniciar.
@@ -126,6 +126,8 @@ Antes de comenzar los pasos de la práctica, realiza las siguientes acciones de 
    - **Campo de rango:** Debe mostrar `=$A$1:$H$51`. Si el rango detectado es diferente, corrígelo manualmente escribiendo `=$A$1:$H$51`.
    - **Casilla "La tabla tiene encabezados":** Debe estar **marcada** (activada). Si no lo está, actívala.
 
+![Imagen práctica](../images/imagen%2073.png)
+
 5. Haz clic en **Aceptar**.
 
 6. Observa los cambios inmediatos en la hoja:
@@ -139,6 +141,8 @@ Antes de comenzar los pasos de la práctica, realiza las siguientes acciones de 
    - En el extremo izquierdo de la cinta, localiza el campo **Nombre de la tabla** (mostrará `Tabla1` por defecto).
    - Haz clic dentro del campo, borra el texto existente y escribe: `TblInventario`
    - Presiona `Enter` para confirmar.
+
+   ![Imagen práctica](../images/imagen%2074.png)
 
 8. Verifica el nombre en el **Cuadro de nombres** (esquina superior izquierda de la hoja): al hacer clic en cualquier celda de la tabla, el cuadro debe mostrar la referencia de celda normalmente, pero si haces clic en la flecha del Cuadro de nombres, `TblInventario` debe aparecer en la lista de nombres definidos.
 
@@ -173,11 +177,13 @@ La hoja `Inventario` muestra el rango `A1:H51` convertido en una tabla con banda
 
 4. El catálogo se organiza en tres secciones: **Claro**, **Medio** y **Oscuro**. Pasa el cursor sobre varios estilos para previsualizar cómo quedaría la tabla (sin hacer clic aún).
 
-5. Aplica el estilo **"Estilo de tabla medio 9"** (azul, segunda fila de la sección Medio):
+5. Aplica el estilo **"Estilo de tabla medio 16"** (azul, segunda fila de la sección Medio):
    - Ubica la sección **Medio** en el catálogo.
    - Haz clic en el estilo de color **azul** de la segunda fila (el nombre exacto aparece en el tooltip al pasar el cursor).
    
-   > **Referencia visual:** Es el estilo con encabezado azul oscuro y bandas en azul claro/blanco alternadas.
+   > **Referencia visual:** Es el estilo con encabezado azul oscuro y bandas en gris claro/blanco alternadas.
+
+![Imagen práctica](../images/imagen%2075.png)
 
 6. Confirma que el estilo se ha aplicado observando el cambio de colores en la tabla.
 
@@ -193,6 +199,8 @@ La hoja `Inventario` muestra el rango `A1:H51` convertido en una tabla con banda
    - ☐ Última columna
    - ☑ Columnas con bandas (puede variar)
    - ☑ Botón de filtro
+
+![Imagen práctica](../images/imagen%2076.png)
 
 9. Realiza los siguientes cambios **uno por uno**, observando el efecto visual en la tabla después de cada cambio:
 
@@ -220,6 +228,8 @@ La hoja `Inventario` muestra el rango `A1:H51` convertido en una tabla con banda
 #### Resultado esperado
 
 La tabla `TblInventario` muestra el estilo de tabla medio azul con bandas de filas activas, sin primera columna resaltada, y con los botones de filtro visibles en los encabezados.
+
+![Imagen práctica](../images/imagen%2077.png)
 
 #### Verificación
 
@@ -250,13 +260,19 @@ La tabla `TblInventario` muestra el estilo de tabla medio azul con bandas de fil
 
    > **Nota:** Excel coloca automáticamente una función SUBTOTALES en la última columna. Este valor inicial puede no ser el que necesitamos; lo configuraremos en los siguientes pasos.
 
+![Imagen práctica](../images/imagen%2078.png)
+
 **Parte B — Configurar funciones de resumen por columna**
 
 5. **Columna A — Columna ID_Producto (CONTEO):**
    - Haz clic en la celda de la fila de totales correspondiente a la columna **A** (celda `A52`).
    - Haz clic en la **flecha desplegable** (▼) que aparece en la celda.
    - Del menú desplegable, selecciona **Contar números** (equivale a la función CONTEO/COUNT).
+
+![Imagen práctica](../images/imagen%2079.png)
+
    - Verifica que el resultado muestra **50** (el total de registros de producto).
+
 
 6. **Columna D — Precio_Unitario (PROMEDIO):**
    - Haz clic en la celda de la fila de totales correspondiente a la columna **D** (celda `D52`).
@@ -264,11 +280,15 @@ La tabla `TblInventario` muestra el estilo de tabla medio azul con bandas de fil
    - Selecciona **Promedio**.
    - Observa el valor calculado (precio promedio de todos los productos).
 
+![Imagen práctica](../images/imagen%2080.png)
+
 7. **Columna E — Stock_Actual (SUMA):**
    - Haz clic en la celda de la fila de totales correspondiente a la columna **E** (celda `E52`).
    - Haz clic en la **flecha desplegable** (▼).
    - Selecciona **Suma**.
    - Observa el valor calculado (total de unidades en stock).
+
+   ![Imagen práctica](../images/imagen%2081.png)
 
 8. **Columna F — Stock_Mínimo (MÍN):**
    - Haz clic en la celda de la fila de totales correspondiente a la columna **F** (celda `F52`).
@@ -276,15 +296,17 @@ La tabla `TblInventario` muestra el estilo de tabla medio azul con bandas de fil
    - Selecciona **Mín**.
    - Observa el valor calculado (el stock mínimo más bajo de todos los productos).
 
+![Imagen práctica](../images/imagen%2082.png)
+
 9. **Columna H — Estado_Stock (CONTEO de texto):**
    - Haz clic en la celda de la fila de totales correspondiente a la columna **H** (celda `H52`).
    - Haz clic en la **flecha desplegable** (▼).
-   - Selecciona **Contar** (esta opción cuenta celdas no vacías, incluyendo texto).
+   - Selecciona **Recuento** (esta opción cuenta celdas no vacías, incluyendo texto).
    - Verifica que el resultado muestra **50**.
 
-10. Haz clic en la celda `D52` (fila de totales, Precio_Unitario) y examina la barra de fórmulas. Observa que Excel usa la función `=SUBTOTALES(101,TblInventario[Precio_Unitario])` en lugar de `=PROMEDIO(...)`. Esto es intencional: la función SUBTOTALES respeta los filtros activos, lo que significa que el promedio se recalculará automáticamente cuando apliques filtros en el Paso 4.
+10. Haz clic en la celda `D52` (fila de totales, Precio_Unitario) y examina la barra de fórmulas. Observa que Excel usa la función `=SUBTOTALES(101,[Precio_Unitario])` en lugar de `=PROMEDIO(...)`. Esto es intencional: la función SUBTOTALES respeta los filtros activos, lo que significa que el promedio se recalculará automáticamente cuando apliques filtros en el Paso 4.
 
-    > **Concepto clave — Referencias estructuradas:** Nota que la fórmula usa `TblInventario[Precio_Unitario]` en lugar de `D2:D51`. Esta es una **referencia estructurada**, una de las ventajas de trabajar con tablas formales. Hace que las fórmulas sean más legibles y se ajusten automáticamente cuando la tabla crece.
+    > **Concepto clave — Referencias estructuradas:** Nota que la fórmula usa `'[Precio_Unitario]` en lugar de `D2:D51`. Esta es una **referencia estructurada**, una de las ventajas de trabajar con tablas formales. Hace que las fórmulas sean más legibles y se ajusten automáticamente cuando la tabla crece.
 
 #### Resultado esperado
 
@@ -311,11 +333,13 @@ La fila 52 muestra la fila de totales con: CONTEO en columna A (valor: 50), PROM
 
 1. Haz clic en la flecha de filtro (▼) del encabezado **Categoría** (columna C).
 
-2. Se abre el panel de filtro. Observa que en la parte inferior aparece una lista con todas las categorías únicas presentes en los datos (por ejemplo: Electrónica, Herramientas, Papelería, Limpieza, etc.).
+2. Se abre el panel de filtro. Observa que en la parte inferior aparece una lista con todas las categorías únicas presentes en los datos (por ejemplo: Electrónica, Cables, Papelería, Limpieza, etc.).
 
 3. Haz clic en **Seleccionar todo** para desmarcar todas las categorías.
 
 4. Marca únicamente la categoría **"Electrónica"**.
+
+![Imagen práctica](../images/imagen%2083.png)
 
 5. Haz clic en **Aceptar**.
 
@@ -324,6 +348,8 @@ La fila 52 muestra la fila de totales con: CONTEO en columna A (valor: 50), PROM
    - Los números de fila (izquierda de la hoja) aparecen en **azul** y no son consecutivos, indicando que hay filas ocultas.
    - El ícono de la flecha en el encabezado Categoría cambia a un ícono de **embudo** (🔽 con filtro), indicando que hay un filtro activo.
    - La fila de totales se **recalcula automáticamente** mostrando solo los valores de los productos de Electrónica.
+
+   ![Imagen práctica](../images/imagen%2084.png)
 
 7. Anota mentalmente (o en papel) cuántos productos de la categoría Electrónica aparecen (observa el valor de CONTEO en `A52`).
 
@@ -335,9 +361,13 @@ La fila 52 muestra la fila de totales con: CONTEO en columna A (valor: 50), PROM
 
 10. En el panel de filtro, pasa el cursor sobre la opción **Filtros de número** para expandir el submenú.
 
+![Imagen práctica](../images/imagen%2085.png)
+
 11. Selecciona **Menor que...** del submenú.
 
-12. Se abre el cuadro de diálogo **Autofiltro personalizado**. En el campo junto a "es menor que", escribe el valor: `20`
+12. Se abre el cuadro de diálogo **Filtro personalizado**. En el campo junto a "es menor que", escribe el valor: `20`
+
+![Imagen práctica](../images/imagen%2086.png)
 
 13. Haz clic en **Aceptar**.
 
@@ -357,11 +387,15 @@ La fila 52 muestra la fila de totales con: CONTEO en columna A (valor: 50), PROM
 
 18. En la sección **Filtrar por color de celda**, selecciona el color **rojo**.
 
+![Imagen práctica](../images/imagen%2087.png)
+
 19. Haz clic en **Aceptar** (o el filtro puede aplicarse directamente al hacer clic en el color).
 
 20. Observa los resultados:
     - Solo se muestran los productos con Estado_Stock = "Crítico" (celdas rojas).
     - Estos son los productos que requieren atención inmediata de reabastecimiento.
+
+![Imagen práctica](../images/imagen%2088.png)
 
 21. **Limpia el filtro:** Haz clic en el embudo del encabezado **Estado_Stock** → selecciona **Borrar filtro de "Estado_Stock"**. Todos los registros deben volver a ser visibles.
 
@@ -395,13 +429,17 @@ Después de completar las tres partes y limpiar todos los filtros, la tabla mues
 
 3. En el grupo **Ordenar y filtrar**, haz clic en el botón **Ordenar** (el ícono con flechas A↕Z y líneas horizontales). Se abre el cuadro de diálogo **Ordenar**.
 
+![Imagen práctica](../images/imagen%2089.png)
+
    > **Nota:** No uses las flechas de filtro de los encabezados para esta tarea, ya que solo permiten ordenar por un criterio a la vez. El cuadro de diálogo **Ordenar** permite configurar múltiples niveles.
 
 4. **Configura el Nivel 1 (criterio principal — Categoría):**
    - En la fila que ya aparece (o haz clic en **Agregar nivel** si el cuadro está vacío):
-   - **Columna:** Selecciona `Categoría` del desplegable "Ordenar por".
+   - **Columna:** Selecciona `Categoría` del desplegable "Ordenar según".
    - **Ordenar según:** `Valores de celda`.
    - **Criterio:** `A a Z`.
+
+![Imagen práctica](../images/imagen%2090.png)
 
 5. **Agrega el Nivel 2 (criterio secundario — Precio_Unitario):**
    - Haz clic en el botón **Agregar nivel** (parte superior izquierda del cuadro de diálogo).
@@ -410,12 +448,16 @@ Después de completar las tres partes y limpiar todos los filtros, la tabla mues
    - **Ordenar según:** `Valores de celda`.
    - **Criterio:** `De mayor a menor`.
 
+   ![Imagen práctica](../images/imagen%2091.png)
+
 6. **Agrega el Nivel 3 (criterio terciario — Nombre_Producto):**
    - Haz clic nuevamente en **Agregar nivel**.
    - Aparece otra fila "Luego por".
    - **Columna:** Selecciona `Nombre_Producto`.
    - **Ordenar según:** `Valores de celda`.
    - **Criterio:** `A a Z`.
+
+   ![Imagen práctica](../images/imagen%2092.png)
 
 7. Verifica que el cuadro de diálogo muestre los tres niveles en el orden correcto:
    - **Nivel 1:** Categoría — A a Z
@@ -425,7 +467,7 @@ Después de completar las tres partes y limpiar todos los filtros, la tabla mues
 8. Haz clic en **Aceptar**.
 
 9. Examina los resultados en la tabla:
-   - Los datos deben estar agrupados visualmente por categoría (todas las filas de "Electrónica" juntas, todas las de "Herramientas" juntas, etc.).
+   - Los datos deben estar agrupados visualmente por categoría (todas las filas de "Electrónica" juntas, todas las de "Almacenamiento" juntas, etc.).
    - Dentro de cada categoría, los productos están ordenados de precio más alto a precio más bajo.
    - Si hay productos con la misma categoría y el mismo precio, estarán ordenados alfabéticamente por nombre.
 
@@ -434,6 +476,8 @@ Después de completar las tres partes y limpiar todos los filtros, la tabla mues
 #### Resultado esperado
 
 La tabla muestra los 50 productos ordenados jerárquicamente: agrupados por categoría en orden alfabético, y dentro de cada categoría ordenados de precio mayor a menor. Los botones de filtro y la fila de totales permanecen intactos.
+
+ ![Imagen práctica](../images/imagen%2093.png)
 
 #### Verificación
 

@@ -4,7 +4,7 @@
 
 | Campo | Detalle |
 |---|---|
-| **Duración estimada** | 36 minutos |
+| **Duración estimada** | 25 minutos |
 | **Complejidad** | Alta |
 | **Nivel de Bloom** | Crear |
 | **Módulo** | 6 — Microsoft Copilot en Excel |
@@ -44,7 +44,7 @@ Al completar esta práctica, el estudiante será capaz de:
 ### Acceso y configuración previa
 
 - Cuenta de Microsoft 365 con **licencia de Copilot habilitada** (verificada por el administrador antes de la sesión).
-- Archivo de práctica **`Lab06_VentasAnuales.xlsx`** guardado en **OneDrive** (no en disco local). El instructor debe haber pre-cargado este archivo en las cuentas de los estudiantes.
+- Archivo de práctica **`Lab06_VentasAnuales.xlsx`** guardado en **OneDrive** (no en disco local).
 - Conexión a Internet activa y estable (mínimo 10 Mbps) durante toda la práctica.
 - Excel configurado en **idioma español** para que los nombres de funciones generados por Copilot coincidan con el idioma de la hoja.
 
@@ -108,9 +108,13 @@ Realiza estos pasos **antes de comenzar** la práctica cronometrada:
 2. Haz clic en la pestaña **Inicio**.
 3. Localiza el botón **Copilot** en el extremo derecho del grupo de comandos (ícono con el logotipo multicolor de Copilot). Si no lo ves en **Inicio**, búscalo en la pestaña **Copilot** si existe en tu versión.
 
+
    > Si el botón aparece **atenuado (gris)**, detente aquí y notifica al instructor. No continúes hasta resolver el acceso.
 
 4. Haz clic en el botón **Copilot**. Se abrirá un **panel lateral** a la derecha de la hoja de cálculo.
+
+![Imagen práctica](../images/imagen%20146.png)
+
 5. Observa los elementos del panel:
    - **Cuadro de texto** en la parte inferior (donde escribirás los prompts).
    - **Área de conversación** en la parte superior (donde aparecerán las respuestas).
@@ -123,6 +127,9 @@ Realiza estos pasos **antes de comenzar** la práctica cronometrada:
    ```
 
 8. Lee la respuesta generada por Copilot. Observa que el asistente describe las columnas y el tipo de información presente en la tabla.
+
+![Imagen práctica](../images/imagen%20147.png)
+
 
 **Resultado esperado:**
 El panel de Copilot está abierto y visible a la derecha. Copilot ha respondido describiendo el contenido del archivo: menciona columnas como Vendedor, Región, Producto, Mes, Unidades Vendidas e Ingresos Totales (o equivalentes según el archivo).
@@ -150,6 +157,9 @@ El panel de Copilot está abierto y visible a la derecha. Copilot ha respondido 
 
 4. Copilot mostrará una sugerencia o ejecutará la acción directamente. Si muestra un botón **"Aplicar"** o **"Insertar"**, haz clic en él para confirmar la acción.
 5. Verifica que los datos ahora tienen el formato de tabla (encabezados con botones de filtro, filas alternadas con color).
+
+![Imagen práctica](../images/imagen%20148.png)
+
 6. Ahora escribe el siguiente prompt para ordenar los datos:
 
    ```
@@ -157,6 +167,9 @@ El panel de Copilot está abierto y visible a la derecha. Copilot ha respondido 
    ```
 
 7. Copilot mostrará una vista previa o ejecutará la ordenación. Confirma la acción si se te solicita.
+
+![Imagen práctica](../images/imagen%20149.png)
+
 8. Escribe un tercer prompt para agregar una columna calculada:
 
    ```
@@ -165,6 +178,8 @@ El panel de Copilot está abierto y visible a la derecha. Copilot ha respondido 
 
 9. Copilot generará la fórmula y mostrará una vista previa. **Antes de aplicar**, lee la fórmula sugerida en el panel y anótala en tu hoja de respuestas.
 10. Haz clic en **"Insertar columna"** o el botón equivalente que muestre Copilot para aplicar la columna calculada.
+
+![Imagen práctica](../images/imagen%20150.png)
 
 **Resultado esperado:**
 - Los datos están en formato de tabla con estilo azul aplicado.
@@ -194,6 +209,9 @@ El panel de Copilot está abierto y visible a la derecha. Copilot ha respondido 
    ```
 
 4. Lee detenidamente la respuesta generada por Copilot. El asistente producirá un resumen en texto con los hallazgos principales.
+
+![Imagen práctica](../images/imagen%20151.png)
+
 5. Evalúa la respuesta: ¿Los productos mencionados coinciden con lo que puedes verificar visualmente en la tabla ordenada del Paso 2? ¿La región mencionada parece correcta?
 6. Si la respuesta es imprecisa o incompleta, refina el prompt. Escribe:
 
@@ -207,6 +225,7 @@ El panel de Copilot está abierto y visible a la derecha. Copilot ha respondido 
    ```
    ¿En qué mes se registraron los mayores ingresos totales? Muéstrame el total mensual de ingresos.
    ```
+![Imagen práctica](../images/imagen%20152.png)
 
 9. Anota en tu **Hoja de Respuestas** (ver Sección 6 de este laboratorio):
    - Los 3 productos con mayores ingresos según Copilot.
@@ -248,6 +267,9 @@ Copilot ha generado al menos dos respuestas analíticas: un resumen descriptivo 
    - ¿Los ejes tienen etiquetas claras?
    - ¿La leyenda es legible?
    - ¿Hay algún elemento que mejorarías manualmente?
+
+![Imagen práctica](../images/imagen%20153.png)
+
 6. Si el gráfico necesita mejoras, intenta primero pedírselas a Copilot. Escribe:
 
    ```
@@ -255,23 +277,17 @@ Copilot ha generado al menos dos respuestas analíticas: un resumen descriptivo 
    ```
 
 7. Si Copilot no puede modificar el gráfico directamente, realiza esta mejora manualmente: haz clic derecho sobre las barras del gráfico → **Agregar etiquetas de datos**.
-8. Añade texto alternativo al gráfico para accesibilidad:
-   - Haz clic derecho sobre el gráfico → **Editar texto alternativo...** (o accede desde **Formato** → **Panel de accesibilidad**).
-   - Escribe: `Gráfico de barras comparativo de ingresos totales por región generado con asistencia de Microsoft Copilot.`
-   - Haz clic en **Aceptar**.
 
 **Resultado esperado:**
 Un gráfico de barras está insertado en la hoja de cálculo con:
 - Título descriptivo (ej. "Ingresos Totales por Región — 2024").
 - Barras de colores distintos por región.
 - Etiquetas de datos visibles.
-- Texto alternativo configurado para accesibilidad.
 
 **Verificación:**
 - [ ] El gráfico está insertado en la hoja (no solo en el panel de Copilot).
 - [ ] El gráfico es de tipo barras (horizontal o vertical) y muestra datos por región.
 - [ ] Las etiquetas de datos son visibles sobre las barras.
-- [ ] El texto alternativo del gráfico está configurado.
 - [ ] Las observaciones de evaluación están anotadas en la Hoja de Respuestas.
 
 ---
@@ -311,6 +327,9 @@ Un gráfico de barras está insertado en la hoja de cálculo con:
 8. Pega la fórmula en la celda del encabezado vacío que seleccionaste en el paso 3. Escribe primero el encabezado de columna: `Categoría`.
 9. En la primera celda de datos de la nueva columna, escribe o pega la fórmula generada por Copilot.
 10. Verifica que la fórmula se propague automáticamente a todas las filas de la tabla (las tablas de Excel hacen esto automáticamente).
+
+![Imagen práctica](../images/imagen%20154.png)
+
 11. Comprueba algunos valores: selecciona una fila al azar, anota el **ID_Producto** y ve manualmente a la hoja **Catálogo_Productos** para verificar que la categoría devuelta es correcta.
 12. Si aparece el error `#N/A` en alguna fila, escribe en Copilot:
 
