@@ -4,7 +4,7 @@
 
 | Atributo         | Detalle                        |
 |------------------|--------------------------------|
-| **Duración**     | 60 minutos                     |
+| **Duración**     | 25 minutos                     |
 | **Complejidad**  | Alta                           |
 | **Nivel Bloom**  | Aplicar                        |
 | **Módulo**       | 4 — Fórmulas y Funciones       |
@@ -18,7 +18,6 @@ En esta práctica construirás un libro de trabajo con tres hojas interconectada
 
 > **Nota sobre idioma de fórmulas:** Todas las fórmulas de esta práctica están escritas en español, que es el idioma predeterminado de Excel instalado en español. Si tu Excel está en inglés, consulta la tabla de equivalencias al final de esta guía.
 
----
 
 ## 3. Objetivos de Aprendizaje
 
@@ -69,7 +68,7 @@ Al completar esta práctica serás capaz de:
 ### Preparación del entorno
 
 1. Abre **Microsoft Excel 365**.
-2. Descarga el archivo `Lab04_Formulas_Funciones_INICIO.xlsx` desde la carpeta del curso en OneDrive.
+2. Descarga el archivo [Lab04_Formulas_Funciones_INICIO.xlsx](./Lab04_Formulas_Funciones_INICIO.xlsx)  desde la carpeta del curso en OneDrive.
 3. Ábrelo en Excel. Verifica que el libro contiene exactamente **cinco hojas** con las siguientes pestañas:
    - `Empleados`
    - `Ventas`
@@ -97,7 +96,7 @@ Al completar esta práctica serás capaz de:
 **Instrucciones:**
 
 1. Haz clic en la pestaña **`Ventas`**.
-2. Verifica que la hoja contiene la siguiente estructura (o créala si el archivo de inicio no la incluye):
+2. Verifica que la hoja contiene la siguiente estructura:
 
    | Celda | Contenido                        |
    |-------|----------------------------------|
@@ -119,6 +118,8 @@ Al completar esta práctica serás capaz de:
 
 3. Formatea la celda `B1` como porcentaje: selecciona `B1`, presiona **Ctrl+1**, elige **Porcentaje** con 0 decimales, haz clic en **Aceptar**.
 
+![Imagen práctica](../images/imagen%2094.png)
+
 **Resultado esperado:** La celda `B1` muestra `8%`. Las celdas `B4:B8` contienen los montos de ventas en formato numérico.
 
 **Verificación:** Confirma que `B1` muestra `8%` y que `B4` contiene el valor `125000`.
@@ -134,7 +135,10 @@ Al completar esta práctica serás capaz de:
    ```
    =B4*$B$1
    ```
+   ![Imagen práctica](../images/imagen%2095.png)
+
 3. Observa el resultado: debería mostrar `10000` (125,000 × 8%).
+
 4. Vuelve a seleccionar `C4`.
 5. Coloca el cursor sobre la esquina inferior derecha de la celda hasta que aparezca el cursor de **cruz negra (+)**.
 6. Arrastra hacia abajo hasta la celda **`C8`** para copiar la fórmula.
@@ -148,6 +152,8 @@ Al completar esta práctica serás capaz de:
 | `C6`  | `=B6*$B$1`         | `11,440` |
 | `C7`  | `=B7*$B$1`         | `7,000`  |
 | `C8`  | `=B8*$B$1`         | `12,960` |
+
+![Imagen práctica](../images/imagen%2096.png)
 
 **Verificación:**
 - Haz clic en `C5` y confirma en la barra de fórmulas que dice `=B5*$B$1` (la referencia a `B5` cambió, pero `$B$1` permanece fija).
@@ -173,9 +179,14 @@ Al completar esta práctica serás capaz de:
 3. En el rango **`B2:K2`** (fila de encabezados de columna), escribe los números del 1 al 10:
    - `B2` = `1`, `C2` = `2`, `D2` = `3`, ..., `K2` = `10`
    - Truco rápido: escribe `1` en `B2`, `2` en `C2`, selecciona `B2:C2` y arrastra el controlador de relleno hasta `K2`.
+
+   ![Imagen práctica](../images/imagen%2097.png)
+
 4. En el rango **`A3:A12`** (columna de encabezados de fila), escribe los números del 1 al 10:
    - `A3` = `1`, `A4` = `2`, ..., `A12` = `10`
    - Usa el mismo método de relleno automático.
+
+![Imagen práctica](../images/imagen%2098.png)
 
 **Resultado esperado:** La fila 2 (columnas B a K) contiene los números 1–10. La columna A (filas 3 a 12) contiene los números 1–10.
 
@@ -197,6 +208,9 @@ Al completar esta práctica serás capaz de:
 3. Presiona **Enter** y vuelve a seleccionar `B3`.
 4. Copia la fórmula hacia la derecha hasta **`K3`**: selecciona `B3`, luego arrastra el controlador de relleno hasta `K3`.
 5. Selecciona el rango **`B3:K3`** completo.
+
+![Imagen práctica](../images/imagen%2099.png)
+
 6. Arrastra el controlador de relleno del rango hacia abajo hasta la fila **12** (`B12:K12`).
 
 **Resultado esperado:** La tabla completa (rango `B3:K12`) contiene los productos de multiplicación correctos. Ejemplos:
@@ -208,6 +222,8 @@ Al completar esta práctica serás capaz de:
 | `B12` | `=$A12*B$2`     | `10`           |
 | `K12` | `=$A12*K$2`     | `100`          |
 | `E7`  | `=$A7*E$2`      | `25`           |
+
+![Imagen práctica](../images/imagen%20100.png)
 
 **Verificación:**
 - Haz clic en `E7` y confirma en la barra de fórmulas: `=$A7*E$2`.
@@ -229,7 +245,7 @@ Al completar esta práctica serás capaz de:
 **Instrucciones:**
 
 1. Haz clic en la pestaña **`Ventas`**.
-2. Desplázate hacia abajo. Debajo de la tabla de comisiones, a partir de la fila **12**, debes encontrar (o crear) la siguiente tabla de ventas mensuales:
+2. Desplázate hacia abajo. Debajo de la tabla de comisiones, a partir de la fila **12**, debes encontrar la siguiente tabla de ventas mensuales:
 
    | Vendedor       | Ene    | Feb    | Mar    | Abr    | May    | Jun    | Total Vendedor |
    |----------------|--------|--------|--------|--------|--------|--------|----------------|
@@ -244,10 +260,15 @@ Al completar esta práctica serás capaz de:
 3. Selecciona cualquier celda dentro de esta tabla (por ejemplo, `B13`).
 4. Ve a **Insertar → Tabla** (o presiona **Ctrl+T**).
 5. Confirma que el rango es correcto y que la opción **"La tabla tiene encabezados"** está marcada. Haz clic en **Aceptar**.
+
+![Imagen práctica](../images/imagen%20101.png)
+
 6. Con la tabla seleccionada, ve a la pestaña **Diseño de tabla** (o **Herramientas de tabla → Diseño**).
 7. En el campo **Nombre de tabla** (extremo izquierdo de la cinta), escribe: `VentasMensuales` y presiona **Enter**.
 
 **Resultado esperado:** La tabla está formateada con el estilo predeterminado de Excel y se llama `VentasMensuales`.
+
+![Imagen práctica](../images/imagen%20102.png)
 
 **Verificación:** Haz clic en cualquier celda de la tabla y confirma que en el campo **Nombre de tabla** aparece `VentasMensuales`.
 
@@ -257,12 +278,17 @@ Al completar esta práctica serás capaz de:
 
 **Instrucciones:**
 
-1. Haz clic en la primera celda de la columna **`Total Vendedor`** (debería ser `H13`, correspondiente a Ana López).
-2. Escribe la siguiente fórmula usando referencia estructurada:
+1. Genera en la celda H12 una columna que diga **`Total Vendedor`** 
+
+2. Posicionate en la celda `H13`, correspondiente a Ana López.Escribe la siguiente fórmula usando referencia estructurada:
    ```
-   =SUMA(VentasMensuales[@[Ene]:[Jun]])
+   =SUMA([@[Ene]:[@Jun]])
    ```
+   ![Imagen práctica](../images/imagen%20103.png)
+
+
    Esta fórmula suma todas las columnas desde `Ene` hasta `Jun` para la fila actual (`@` significa "esta fila").
+
 3. Presiona **Enter**. Excel puede completar automáticamente la fórmula para el resto de las filas de la tabla.
 4. Si no se completó automáticamente, copia la fórmula hacia abajo hasta la última fila de datos.
 
@@ -276,7 +302,7 @@ Al completar esta práctica serás capaz de:
 | Diego Torres   | `178,000`      |
 | Valeria Núñez  | `359,000`      |
 
-**Verificación:** Confirma que `H13` = `262,000` y que la barra de fórmulas muestra `=SUMA(VentasMensuales[@[Ene]:[Jun]])`.
+**Verificación:** Confirma que `H13` = `262,000` y que la barra de fórmulas muestra `=SUMA([@[Ene]:[@Jun]])`.
 
 ---
 
@@ -284,7 +310,7 @@ Al completar esta práctica serás capaz de:
 
 **Instrucciones:**
 
-1. En la hoja `Ventas`, ubícate en una zona libre, por ejemplo a partir de la celda **`J12`**.
+1. En la hoja `Ventas`, ubícate en una zona libre, por ejemplo a partir de la celda **`J13`**.
 2. Crea los siguientes encabezados y fórmulas:
 
    | Celda  | Contenido a escribir              | Fórmula                                          |
@@ -298,6 +324,12 @@ Al completar esta práctica serás capaz de:
    | `K15`  | *(fórmula)*                       | `=MAX(VentasMensuales[Total Vendedor])`           |
    | `J16`  | `Vendedor con Menor Venta`        | *(solo texto)*                                   |
    | `K16`  | *(fórmula)*                       | `=MIN(VentasMensuales[Total Vendedor])`           |
+
+
+![Imagen práctica](../images/imagen%20104.png)
+![Imagen práctica](../images/imagen%20105.png)
+![Imagen práctica](../images/imagen%20106.png)
+![Imagen práctica](../images/imagen%20107.png)
 
 3. Ingresa cada fórmula en la columna K presionando **Enter** después de cada una.
 
@@ -325,20 +357,7 @@ Al completar esta práctica serás capaz de:
 **Instrucciones:**
 
 1. Haz clic en la pestaña **`Empleados`**.
-2. Verifica que la hoja contiene una tabla con las siguientes columnas (o créala a partir de `A1`):
-
-   | ID  | Nombre Completo    | Departamento  | Fecha Ingreso | Salario | % Cumplimiento | Teléfono   | Email |
-   |-----|--------------------|---------------|---------------|---------|----------------|------------|-------|
-   | 101 | Ana López          | Ventas        | 15/03/2019    | 28000   | 95             | 5512345678 |       |
-   | 102 | Carlos Méndez      | Ventas        | 22/07/2020    | 25000   | 78             |            |       |
-   | 103 | Sofía Ramírez      | Marketing     | 08/01/2018    | 32000   | 88             | 5598765432 |       |
-   | 104 | Diego Torres       | Operaciones   | 30/11/2021    | 22000   | 65             | 5567891234 |       |
-   | 105 | Valeria Núñez      | Ventas        | 14/05/2017    | 35000   | 92             |            |       |
-   | 106 | Roberto Sánchez    | Marketing     | 03/09/2022    | 24000   | 71             | 5534567890 |       |
-   | 107 | Lucía Fernández    | RRHH          | 17/02/2020    |         | 84             | 5523456789 |       |
-   | 108 | Martín Guzmán      | Operaciones   | 25/06/2019    | 26000   | 90             | 5545678901 |       |
-   | 109 | Isabella Morales   | RRHH          | 11/10/2021    | 23000   |                |            |       |
-   | 110 | Alejandro Ríos     | Marketing     | 28/04/2023    | 21000   | 76             | 5556789012 |       |
+2. Verifica que la hoja contiene una tabla con ciertos datos.
 
    > Nota: Las celdas vacías en Teléfono (filas 103, 106), Salario (fila 108) y % Cumplimiento / Email (fila 110) son **intencionales** para el ejercicio de auditoría.
 
@@ -352,7 +371,7 @@ Al completar esta práctica serás capaz de:
 
 **Instrucciones:**
 
-1. En la misma hoja `Empleados`, ubícate en la celda **`J1`** y crea el siguiente panel de auditoría:
+1. En la misma hoja `Empleados`, ubícate en la celda **`J13`** y crea el siguiente panel de auditoría:
 
    | Celda  | Texto / Fórmula                                                    |
    |--------|--------------------------------------------------------------------|
@@ -382,8 +401,8 @@ Al completar esta práctica serás capaz de:
 |-------------------------------------|----------------|
 | Total de registros (ID numéricos)   | `10`           |
 | Total de nombres registrados        | `10`           |
-| Teléfonos registrados               | `8`            |
-| Teléfonos faltantes                 | `2`            |
+| Teléfonos registrados               | `7`            |
+| Teléfonos faltantes                 | `3`            |
 | Salarios registrados                | `9`            |
 | Salarios faltantes                  | `1`            |
 | % Cumplimiento registrados          | `9`            |
@@ -391,8 +410,10 @@ Al completar esta práctica serás capaz de:
 
 **Verificación:**
 - Confirma que `K2` = `10` (CONTAR cuenta solo valores numéricos en la columna ID).
-- Confirma que `K5` = `2` (dos teléfonos vacíos: Carlos Méndez y Valeria Núñez).
+- Confirma que `K5` = `3` (dos teléfonos vacíos: Carlos Méndez y Valeria Núñez e Isabella Morales).
 - Confirma que `K3` = `10` (CONTARA cuenta texto; todos los nombres están registrados).
+
+![Imagen práctica](../images/imagen%20108.png)
 
 > **Concepto clave:** `CONTAR()` solo cuenta celdas con **números**. `CONTARA()` cuenta celdas con **cualquier contenido** (números, texto, fechas). `CONTAR.BLANCO()` cuenta celdas **vacías**. La suma de `CONTARA()` + `CONTAR.BLANCO()` debe ser igual al total de filas de la tabla.
 
@@ -414,7 +435,10 @@ Al completar esta práctica serás capaz de:
    ```
    =SI([@[% Cumplimiento]]>=80,"Cumple","No Cumple")
    ```
+![Imagen práctica](../images/imagen%20109.png)
+
 4. Presiona **Enter**. Excel completará automáticamente la fórmula para todos los empleados.
+
 
 **Resultado esperado:**
 
@@ -450,6 +474,8 @@ Al completar esta práctica serás capaz de:
    - Si `% Cumplimiento` ≥ 75 (pero < 90) → `"Medio"`
    - En cualquier otro caso (< 75 o vacío) → `"Bajo"`
 4. Presiona **Enter**.
+
+![Imagen práctica](../images/imagen%20110.png)
 
 **Resultado esperado:**
 
@@ -497,6 +523,8 @@ Ventas
 ```
 *(en orden alfabético, sin repeticiones)*
 
+![Imagen práctica](../images/imagen%20111.png)
+
 **Verificación:** Confirma que aparecen exactamente 4 departamentos únicos en orden alfabético. Haz clic en `L2` y verifica que la barra de fórmulas muestra `=ORDENAR(UNICOS(TablaEmpleados[Departamento]))`.
 
 > **Nota:** Si tu Excel no es versión 365, `UNICOS()` y `ORDENAR()` no estarán disponibles. Consulta con tu instructor las alternativas para versiones anteriores.
@@ -514,7 +542,7 @@ Ventas
 **Instrucciones:**
 
 1. Haz clic en la pestaña **`Texto_Empleados`**.
-2. Verifica o crea la siguiente estructura de datos a partir de `A1`:
+2. Verifica la siguiente estructura de datos a partir de `A1`:
 
    | A (Nombre Completo)   | B (Código Depto) |
    |-----------------------|------------------|
@@ -531,7 +559,7 @@ Ventas
 
    > Los nombres están en MAYÚSCULAS y sin acentos para facilitar el ejercicio de normalización.
 
-3. Agrega los siguientes encabezados en la fila 1 (si los datos empiezan en fila 2):
+3. Visualiza los siguientes encabezados en la fila 1 
    - `A1`: `Nombre Completo`
    - `B1`: `Código Depto`
    - `C1`: `Primer Nombre`
@@ -541,8 +569,6 @@ Ventas
    - `G1`: `Largo Nombre`
    - `H1`: `Correo Corporativo`
    - `I1`: `Correo con UNIRCADENAS`
-
-**Resultado esperado:** La hoja tiene encabezados en la fila 1 y datos de 10 empleados en las filas 2–11.
 
 ---
 
@@ -563,10 +589,11 @@ Ventas
 **Resultado esperado:**
 - `C2` = `ANA`
 - `C3` = `CARLOS`
-- `C5` = `VALERIA`
+- `C5` = `DIEGO`
 
 **Verificación:** Confirma que `C2` = `ANA` y `C3` = `CARLOS`.
 
+![Imagen práctica](../images/imagen%20112.png)
 ---
 
 #### Paso F3: Extraer el apellido con DERECHA() y LARGO()
@@ -589,7 +616,9 @@ Ventas
 - `D3` = `MENDEZ`
 - `D9` = `MORALES`
 
-**Verificación:** Confirma que `D2` = `LOPEZ` y `D9` = `MORALES`.
+**Verificación:** Confirma que `D2` = `LOPEZ` y `D9` = `GUZMAN`.
+
+![Imagen práctica](../images/imagen%20113.png)
 
 ---
 
@@ -606,6 +635,9 @@ Ventas
    - `MINUSC(EXTRAE(C2,2,LARGO(C2)-1))`: convierte el resto del nombre a minúsculas.
    - `CONCAT()`: une ambas partes.
 3. Presiona **Enter** y copia la fórmula hasta `E11`.
+
+![Imagen práctica](../images/imagen%20114.png)
+
 4. Haz clic en la celda **`F2`** y aplica la misma lógica para el apellido:
    ```
    =CONCAT(MAYUSC(IZQUIERDA(D2,1)),MINUSC(EXTRAE(D2,2,LARGO(D2)-1)))
@@ -615,9 +647,10 @@ Ventas
 **Resultado esperado:**
 - `E2` = `Ana`, `F2` = `Lopez`
 - `E3` = `Carlos`, `F3` = `Mendez`
-- `E9` = `Isabella`, `F9` = `Morales`
+- `E9` = `Isabella`, `F9` = `Guzman`
 
-**Verificación:** Confirma que `E2` = `Ana` (no `ANA` ni `ana`).
+![Imagen práctica](../images/iimagen%20115.png)
+
 
 ---
 
@@ -639,6 +672,7 @@ Ventas
 
 **Verificación:** Cuenta manualmente los caracteres de "ANA LOPEZ" (A-N-A-espacio-L-O-P-E-Z = 9) y confirma que `G2` = `9`.
 
+![Imagen práctica](../images/imagen%20116.png)
 ---
 
 #### Paso F6: Construir correos electrónicos con CONCAT()
@@ -659,7 +693,10 @@ Ventas
 **Resultado esperado:**
 - `H2` = `ana.lopez@empresa.com`
 - `H3` = `carlos.mendez@empresa.com`
-- `H5` = `valeria.nunez@empresa.com`
+- `H5` = `diego.torres@empresa.com`
+
+![Imagen práctica](../images/imagen%20117.png)
+
 
 **Verificación:** Confirma que `H2` = `ana.lopez@empresa.com` (todo en minúsculas, con punto separador y dominio correcto).
 
@@ -681,6 +718,8 @@ Ventas
 **Resultado esperado:** Los valores en la columna I deben ser idénticos a los de la columna H:
 - `I2` = `ana.lopez@empresa.com`
 - `I3` = `carlos.mendez@empresa.com`
+
+![Imagen práctica](../images/imagen%20118.png)
 
 **Verificación:**
 - Confirma que `H2` e `I2` contienen exactamente el mismo texto.
@@ -711,7 +750,7 @@ Al finalizar todos los módulos, realiza las siguientes verificaciones globales 
 
 ### Prueba de integridad de referencias
 
-1. En la hoja **Ventas**, cambia la tasa de comisión en `B1` a `0.12` (12%).
+1. En la hoja **Ventas**, cambia la tasa de comisión en `B1` a `0.08` (8%).
 2. Verifica que **todas** las celdas en `C4:C8` se actualizan automáticamente.
 3. Devuelve `B1` a `0.08`.
 
@@ -720,6 +759,9 @@ Al finalizar todos los módulos, realiza las siguientes verificaciones globales 
 1. Agrega un nuevo vendedor en la tabla `VentasMensuales` (última fila): `Luis Herrera` con ventas de `40000, 38000, 42000, 39000, 41000, 43000`.
 2. Verifica que la columna `Total Vendedor` calcula automáticamente el total del nuevo registro.
 3. Verifica que el panel de resumen (Total General, Promedio, MAX, MIN) se actualiza automáticamente.
+
+![Imagen práctica](../images/imagen%20119.png)
+
 4. Elimina el registro de Luis Herrera con **Ctrl+Z** al terminar.
 
 ---
