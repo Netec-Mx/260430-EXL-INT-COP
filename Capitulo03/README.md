@@ -47,7 +47,7 @@ Al finalizar esta práctica, serás capaz de:
 | Requisito | Detalle |
 |---|---|
 | Cuenta Microsoft 365 | Activa con acceso a Excel 365 (versión 2308 o superior recomendada) |
-| Archivo de práctica | - Archivo [Lab03_Inventario_Productos(1).xlsx](./Lab03_Inventario_Productos(1).xlsx)|
+| Archivo de práctica | - Archivo [Lab03_Inventario_Productos (1).xlsx](./Lab03_Inventario_Productos(1).xlsx)|
 | Acceso a OneDrive | Recomendado para guardar el archivo (no obligatorio en esta práctica) |
 
 > **Nota para el instructor:** Esta práctica no requiere licencia de Copilot. Sin embargo, si algún estudiante tiene Excel en inglés, deberá usar los equivalentes en inglés para las funciones (SUM, AVERAGE, COUNT, MAX, MIN). Aclarar esto antes de iniciar.

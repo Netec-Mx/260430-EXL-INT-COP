@@ -79,7 +79,6 @@ Al completar esta práctica serás capaz de:
 
 > **Importante:** Si el archivo de inicio no está disponible, el instructor te indicará cómo crear los datos manualmente. Las instrucciones de creación de datos están incluidas al inicio de cada módulo como paso opcional.
 
----
 
 ## 6. Instrucciones Paso a Paso
 
