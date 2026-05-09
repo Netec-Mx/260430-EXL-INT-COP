@@ -44,7 +44,8 @@ Al completar esta práctica, el estudiante será capaz de:
 ### Acceso y configuración previa
 
 - Cuenta de Microsoft 365 con **licencia de Copilot habilitada** (verificada por el administrador antes de la sesión).
-- Archivo de práctica **`Lab06_VentasAnuales.xlsx`** guardado en **OneDrive** (no en disco local).
+- Archivo de práctica [Lab06_VentasAnuales (1).xlsx](./Lab06_VentasAnuales (1).xlsx)
+
 - Conexión a Internet activa y estable (mínimo 10 Mbps) durante toda la práctica.
 - Excel configurado en **idioma español** para que los nombres de funciones generados por Copilot coincidan con el idioma de la hoja.
 
