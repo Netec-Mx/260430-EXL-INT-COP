@@ -4,7 +4,7 @@
 
 | Campo            | Detalle                                      |
 |------------------|----------------------------------------------|
-| **Duración**     | 36 minutos                                   |
+| **Duración**     | 25 minutos                                   |
 | **Complejidad**  | Media                                        |
 | **Nivel Bloom**  | Aplicar (Apply)                              |
 | **Módulo**       | 5 — Creación y Gestión de Gráficos           |
@@ -26,7 +26,7 @@ Al completar esta práctica, serás capaz de:
 - [ ] Agregar nuevas series de datos y modificar el rango de datos de series existentes usando el cuadro de diálogo **Seleccionar datos**.
 - [ ] Intercambiar filas y columnas en un gráfico para cambiar la perspectiva de visualización y analizar cuál comunica mejor la información.
 - [ ] Personalizar los elementos del gráfico: título, etiquetas de datos, leyenda, ejes y líneas de cuadrícula con formato específico.
-- [ ] Aplicar estilos y esquemas de color predefinidos, y agregar texto alternativo descriptivo usando el Panel de Accesibilidad.
+- [ ] Aplicar estilos y esquemas de color predefinidos.
 
 ---
 
@@ -41,11 +41,10 @@ Al completar esta práctica, serás capaz de:
 ### Acceso y Licencias Requeridos
 
 - Cuenta de Microsoft 365 activa con acceso a Microsoft Excel 365.
-- Archivo de práctica **`Lab05_Ventas_Graficos.xlsx`** disponible en tu carpeta de OneDrive asignada para el curso.
 
-> **⚠️ Nota para el instructor:** Verificar que el archivo de práctica esté pre-cargado en OneDrive de cada estudiante antes del inicio de la sesión. Aunque esta práctica no requiere Copilot, guardar en OneDrive es un buen hábito que se reforzará en la Práctica 6.
+- Archivo de práctica |  [Lab05_Ventas_Graficos(1).xlsx](./Lab05_Ventas_Graficos(1).xlsx)
 
----
+
 
 ## Entorno de Laboratorio
 
@@ -74,7 +73,7 @@ Al completar esta práctica, serás capaz de:
 Antes de comenzar los pasos de la práctica, realiza la siguiente configuración:
 
 1. Abre **Microsoft OneDrive** y navega a la carpeta del curso.
-2. Localiza el archivo **`Lab05_Ventas_Graficos.xlsx`** y ábrelo directamente en **Excel de escritorio** (no en Excel Online) haciendo clic en **Abrir en la aplicación de escritorio**.
+2. Localiza el archivo **[Lab05_Ventas_Graficos(1).xlsx](./Lab03_Inventario_Productos(1).xlsx)** y ábrelo directamente en **Excel de escritorio** (no en Excel Online) haciendo clic en **Abrir en la aplicación de escritorio**.
 3. Verifica que el archivo se abre correctamente y que puedes ver las siguientes hojas en la parte inferior:
    - `Datos_Ventas`
    - `Datos_Año_Anterior`
@@ -148,10 +147,15 @@ Debes poder identificar claramente los dos rangos de datos y comprender que:
 3. En el grupo **Gráficos**, haz clic en el ícono **Insertar gráfico de columnas o de barras** (ícono con barras verticales).
 
 4. En el menú desplegable que aparece, selecciona **Columna agrupada** (primera opción en la sección "Columna 2D"). Es el ícono con barras verticales de diferentes colores agrupadas lado a lado.
+![Imagen práctica](../images/imagen%20120.png)
 
 5. Excel insertará el gráfico como un **objeto incrustado** sobre la hoja `Datos_Ventas`. Verás el gráfico flotando sobre las celdas, con cuatro grupos de barras (uno por trimestre) y cuatro colores (uno por región).
 
    > **Observación:** En este momento, las **filas** (trimestres T1–T4) son las categorías del eje X, y las **columnas** (regiones) son las series representadas por diferentes colores. Recuerda esta configuración; la modificarás en el Paso 5.
+
+5.5  — Verifica en la leyenda que aparecen las regiones (Norte, Sur, Este, Oeste) y en el eje X los trimestres (T1–T4). Si en cambio la leyenda muestra T1, T2, T3, T4, ve a Diseño de gráfico → Cambiar fila/columna para corregirlo antes de continuar.
+
+![Imagen práctica](../images/imagen%20120a.png)
 
 **Parte B — Mover el gráfico a una hoja dedicada:**
 
@@ -165,6 +169,8 @@ Debes poder identificar claramente los dos rangos de datos y comprender que:
 
 10. En el campo de texto, borra el nombre predeterminado y escribe: `Columnas_Regiones`
 
+![Imagen práctica](../images/imagen%20121a.png)
+
 11. Haz clic en **Aceptar**.
 
 12. Verifica que el gráfico ahora aparece como una hoja completa. En la barra de pestañas inferior del libro debes ver la nueva pestaña llamada `Columnas_Regiones`.
@@ -175,6 +181,7 @@ Debes poder identificar claramente los dos rangos de datos y comprender que:
 - El eje horizontal (X) muestra los cuatro trimestres: T1, T2, T3, T4.
 - La leyenda muestra los nombres de las cuatro regiones con sus colores correspondientes.
 - La hoja `Datos_Ventas` ya no muestra el gráfico incrustado.
+
 
 #### Verificación
 
@@ -196,11 +203,15 @@ Debes poder identificar claramente los dos rangos de datos y comprender que:
 
 3. Ve a **Insertar → Gráficos → Insertar gráfico de líneas o de áreas** (ícono con líneas ascendentes).
 
-4. En el menú desplegable, selecciona **Línea con marcadores** (segunda opción en la sección "Línea 2D", muestra líneas con puntos marcadores en cada valor).
+4. En el menú desplegable, selecciona **Línea con marcadores** (cuarta opción en la sección "Línea 2D", muestra líneas con puntos marcadores en cada valor).
+
+![Imagen práctica](../images/imagen%20123.png)
 
 5. Excel insertará el gráfico de líneas como objeto incrustado en la hoja `Datos_Ventas`.
 
 6. Con el gráfico seleccionado, ve a **Diseño de gráfico → Mover gráfico**.
+
+![Imagen práctica](../images/imagen%20124.png)
 
 7. Selecciona **Hoja nueva**, escribe el nombre `Lineas_Tendencia` y haz clic en **Aceptar**.
 
@@ -208,6 +219,8 @@ Debes poder identificar claramente los dos rangos de datos y comprender que:
    - Hay **cuatro líneas**, una por cada región.
    - El eje X muestra los trimestres T1 a T4.
    - Los marcadores en cada punto permiten identificar el valor exacto de cada trimestre.
+
+![Imagen práctica](../images/imagen%20125.png)
 
 #### Resultado Esperado
 
@@ -236,6 +249,8 @@ Debes poder identificar claramente los dos rangos de datos y comprender que:
 
 4. Selecciona **Circular** (primera opción, gráfico de pastel estándar en 2D).
 
+![Imagen práctica](../images/imagen%20126.png)
+
 5. Excel insertará el gráfico circular como objeto incrustado en la hoja `Datos_Ventas`.
 
 6. **En esta ocasión, NO moverás el gráfico a una hoja separada.** Reposiciona el gráfico incrustado para que no tape los datos:
@@ -246,6 +261,8 @@ Debes poder identificar claramente los dos rangos de datos y comprender que:
 7. Si necesitas ajustar el tamaño, arrastra los controladores de esquina (círculos pequeños en las esquinas del gráfico) mientras mantienes presionada la tecla **Alt** para que el gráfico se ajuste a los bordes de las celdas.
 
 #### Resultado Esperado
+
+![Imagen práctica](../images/imagen%20127.png)
 
 - Un gráfico circular con cuatro sectores (uno por producto) aparece como objeto incrustado en la hoja `Datos_Ventas`, posicionado a la derecha de los datos sin taparlos.
 - La leyenda muestra los nombres de los cuatro productos.
@@ -274,11 +291,15 @@ Debes poder identificar claramente los dos rangos de datos y comprender que:
 
 5. Se abrirá el cuadro de diálogo **Seleccionar origen de datos**. Observa que en el panel izquierdo (**Entradas de leyenda (Series)**) ya aparecen las cuatro series actuales: Norte, Sur, Este, Oeste.
 
+![Imagen práctica](../images/imagen%20128a.png)
+
 6. Para agregar la serie del año anterior, haz clic en el botón **Agregar** (en el panel izquierdo).
 
 7. Se abrirá el cuadro de diálogo **Modificar serie**. Completa los campos:
 
    - **Nombre de la serie:** Haz clic en el campo y luego haz clic en la celda **`B1`** de la hoja `Datos_Año_Anterior`. Verás que el campo muestra la referencia `=Datos_Año_Anterior!$B$1`.
+
+   ![Imagen práctica](../images/imagen%20129.png)
 
    - **Valores de la serie:** Borra el contenido del campo, luego selecciona el rango **`B2:B5`** de la hoja `Datos_Año_Anterior`. El campo mostrará `=Datos_Año_Anterior!$B$2:$B$5`.
 
@@ -286,9 +307,13 @@ Debes poder identificar claramente los dos rangos de datos y comprender que:
 
 9. Verás que la nueva serie "Norte (Año Anterior)" aparece en el panel izquierdo del cuadro **Seleccionar origen de datos**.
 
+![Imagen práctica](../images/imagen%20130a.png)
+
 10. Haz clic en **Aceptar** para cerrar el cuadro de diálogo principal.
 
 11. Observa el gráfico: ahora tiene **cinco grupos de barras** por trimestre (las cuatro regiones del año actual más la región Norte del año anterior). La nueva serie aparece con un color diferente.
+
+![Imagen práctica](../images/imagen%20131a.png)
 
 #### Resultado Esperado
 
@@ -316,7 +341,7 @@ Debes poder identificar claramente los dos rangos de datos y comprender que:
 
 3. En el panel izquierdo (**Entradas de leyenda**), haz clic para seleccionar la serie **Norte** (la del año actual, no la del año anterior).
 
-4. Haz clic en el botón **Editar** (debajo del panel izquierdo).
+4. Haz clic en el botón **Modificar** (debajo del panel izquierdo).
 
 5. Se abre el cuadro **Modificar serie**. Observa los campos actuales:
    - **Nombre de la serie:** referencia a la celda con el encabezado "Norte".
@@ -329,6 +354,8 @@ Debes poder identificar claramente los dos rangos de datos y comprender que:
    =Datos_Ventas!$B$2:$B$5
    ```
    > **Nota:** En este ejercicio el rango es el mismo, pero estás practicando el flujo de modificación. En un escenario real, aquí cambiarías el rango para incluir nuevos períodos de datos.
+
+![Imagen práctica](../images/imagen%20133.png)
 
 8. Haz clic en **Aceptar** para cerrar **Modificar serie**.
 
@@ -345,46 +372,8 @@ Debes poder identificar claramente los dos rangos de datos y comprender que:
 - [ ] Identificaste los campos **Nombre de la serie** y **Valores de la serie**.
 - [ ] El gráfico sigue mostrando todas las series sin errores.
 
----
 
-### Paso 7: Intercambiar Filas y Columnas
-
-**Objetivo:** Usar la función **Cambiar fila/columna** para alternar entre dos perspectivas de visualización: trimestres como categorías (configuración actual) versus regiones como categorías (nueva configuración).
-
-#### Instrucciones
-
-1. Permanece en la hoja **`Columnas_Regiones`** con el gráfico seleccionado.
-
-2. Ve a la pestaña **Diseño de gráfico** en la cinta.
-
-3. En el grupo **Datos**, haz clic en el botón **Cambiar fila/columna**.
-
-4. Observa el cambio en el gráfico:
-   - **Antes del cambio:** El eje X mostraba los **trimestres** (T1, T2, T3, T4) y las series de colores representaban las **regiones**.
-   - **Después del cambio:** El eje X ahora muestra las **regiones** (Norte, Sur, Este, Oeste) y las series de colores representan los **trimestres**.
-
-5. Analiza ambas perspectivas:
-   - **Perspectiva por trimestres en el eje X:** Útil para responder *"¿Cómo se comparan las regiones en cada trimestre?"*
-   - **Perspectiva por regiones en el eje X:** Útil para responder *"¿Cómo evolucionó cada región a lo largo del año?"*
-
-6. Para este ejercicio, **vuelve a la configuración original** (trimestres en el eje X) haciendo clic nuevamente en **Cambiar fila/columna**.
-
-7. Verifica que el gráfico regresó a mostrar los trimestres en el eje X y las regiones como series de colores.
-
-#### Resultado Esperado
-
-- Después del primer clic en **Cambiar fila/columna**, el eje X muestra las cuatro regiones y la leyenda muestra los cuatro trimestres.
-- Después del segundo clic, el gráfico regresa a la configuración original con los trimestres en el eje X.
-
-#### Verificación
-
-- [ ] Observaste y comprendiste las dos perspectivas de visualización.
-- [ ] El gráfico final muestra los trimestres (T1–T4) en el eje X.
-- [ ] Las regiones aparecen como series diferenciadas por color en la leyenda.
-
----
-
-### Paso 8: Personalizar los Elementos del Gráfico
+### Paso 7: Personalizar los Elementos del Gráfico
 
 **Objetivo:** Agregar y formatear el título del gráfico, habilitar etiquetas de datos con formato de número, reposicionar la leyenda, ajustar la escala del eje vertical y eliminar las líneas de cuadrícula secundarias.
 
@@ -405,6 +394,9 @@ Debes poder identificar claramente los dos rangos de datos y comprender que:
    Ventas Trimestrales por Región 2024
    ```
 
+![Imagen práctica](../images/imagen%20134.png)
+
+
 6. Para formatear el título: con el texto del título aún seleccionado (o haciendo clic en el borde del cuadro de título para seleccionarlo como objeto), ve a la pestaña **Inicio** en la cinta y aplica:
    - **Tamaño de fuente:** 14
    - **Negrita:** activada (Ctrl+N)
@@ -419,11 +411,15 @@ Debes poder identificar claramente los dos rangos de datos y comprender que:
 
 10. Marca la casilla **Etiquetas de datos**. Aparecerán los valores numéricos sobre cada barra.
 
+![Imagen práctica](../images/imagen%20135.png)
+
 11. Para formatear las etiquetas: haz clic derecho sobre cualquier etiqueta de datos en el gráfico y selecciona **Dar formato a etiquetas de datos**.
 
 12. En el panel **Dar formato a etiquetas de datos** que aparece a la derecha, busca la sección **Número** (puede que necesites desplazarte hacia abajo).
 
 13. En el campo **Categoría**, selecciona **Número** y establece **Posiciones decimales: 0** (cero decimales, ya que los valores son enteros en miles).
+
+![Imagen práctica](../images/imagen%20136.png)
 
 14. Cierra el panel de formato haciendo clic en la **X** del panel.
 
@@ -449,6 +445,8 @@ Debes poder identificar claramente los dos rangos de datos y comprender que:
 
 22. Localiza el campo **Unidad principal** y establece un valor fijo apropiado (por ejemplo, `50` si los valores están en el rango de 0–500, o el valor que el instructor indique según los datos del archivo).
 
+![Imagen práctica](../images/imagen%20137.png)
+
 23. Cierra el panel de formato.
 
 **Parte E — Eliminar las líneas de cuadrícula secundarias:**
@@ -458,6 +456,8 @@ Debes poder identificar claramente los dos rangos de datos y comprender que:
 25. Pasa el cursor sobre **Líneas de cuadrícula** y haz clic en la flecha de submenú.
 
 26. Verifica que solo esté marcada la opción **Horizontal principal** y desmarca cualquier otra opción marcada (como **Horizontal secundaria** o **Vertical principal**).
+
+![Imagen práctica](../images/imagen%20138.png)
 
 27. Haz clic fuera del menú para cerrarlo.
 
@@ -479,7 +479,7 @@ Debes poder identificar claramente los dos rangos de datos y comprender que:
 
 ---
 
-### Paso 9: Aplicar Estilos y Esquema de Colores
+### Paso 8: Aplicar Estilos y Esquema de Colores
 
 **Objetivo:** Aplicar un estilo de gráfico predefinido del catálogo de Excel y cambiar el esquema de colores para alinearlo con una identidad corporativa simulada (colores azul y gris).
 
@@ -497,6 +497,9 @@ Debes poder identificar claramente los dos rangos de datos y comprender que:
 
 5. Selecciona el **Estilo 8** (fondo oscuro con barras de colores brillantes) o el estilo que el instructor indique. Haz clic sobre él para aplicarlo.
 
+![Imagen práctica](../images/imagen%20139.png)
+
+
    > **Alternativa rápida:** También puedes hacer clic en el ícono de **pincel** (Estilos de gráfico) que aparece a la derecha del gráfico cuando está seleccionado, y seleccionar el estilo desde ese panel flotante.
 
 **Parte B — Cambiar el esquema de colores:**
@@ -509,9 +512,11 @@ Debes poder identificar claramente los dos rangos de datos y comprender que:
    - **Colorido:** paletas con múltiples colores distintos.
    - **Monocromático:** paletas con variaciones de un solo color.
 
-9. Para simular una identidad corporativa en tonos azules, selecciona la opción **Color 2** de la sección **Monocromático** (paleta de azules). Si prefieres mantener múltiples colores pero con una paleta más corporativa, selecciona **Colorido 2** de la sección Colorido.
+9. Para simular una identidad corporativa en tonos azules, selecciona la opción **Color 1** de la sección **Monocromático** (paleta de azules). Si prefieres mantener múltiples colores pero con una paleta más corporativa, selecciona **Colorido 2** de la sección Colorido.
 
 10. Observa cómo el gráfico actualiza sus colores inmediatamente.
+
+![Imagen práctica](../images/imagen%20140.png)
 
 11. Si el resultado no es visualmente satisfactorio, prueba con otras opciones hasta encontrar una combinación que comunique los datos de manera clara y profesional.
 
@@ -527,85 +532,8 @@ Debes poder identificar claramente los dos rangos de datos y comprender que:
 - [ ] Los colores de las barras siguen una paleta coherente.
 - [ ] El título, las etiquetas y la leyenda siguen siendo visibles y legibles con el nuevo estilo.
 
----
 
-### Paso 10: Agregar Texto Alternativo para Accesibilidad
-
-**Objetivo:** Agregar texto alternativo descriptivo a cada uno de los tres gráficos creados usando el Panel de Accesibilidad de Excel, garantizando que las visualizaciones sean accesibles para usuarios con discapacidades visuales que utilizan lectores de pantalla.
-
-#### Instrucciones
-
-**Parte A — Texto alternativo para el gráfico de columnas:**
-
-1. Permanece en la hoja **`Columnas_Regiones`** con el gráfico seleccionado (haz clic en cualquier área del gráfico para seleccionarlo).
-
-2. Ve a la pestaña **Revisar** en la cinta de opciones.
-
-3. En el grupo **Accesibilidad**, haz clic en **Comprobar accesibilidad**. Se abrirá el Panel de Accesibilidad en el lado derecho de la pantalla.
-
-   > **Método alternativo:** También puedes hacer clic derecho sobre el gráfico, seleccionar **Editar texto alternativo** en el menú contextual, y se abrirá directamente el panel de texto alternativo.
-
-4. En el Panel de Accesibilidad, haz clic en **Texto alternativo** (si no estás ya en esa sección).
-
-5. En el campo de texto, escribe la siguiente descripción (o una equivalente que describa los datos reales de tu archivo):
-
-   ```
-   Gráfico de columnas agrupadas que muestra las ventas trimestrales en miles de dólares para las regiones Norte, Sur, Este y Oeste durante los cuatro trimestres del año 2024. El eje horizontal representa los trimestres T1 a T4 y el eje vertical representa el valor de ventas. Se incluye también la serie de ventas de la región Norte del año anterior para comparación.
-   ```
-
-6. Haz clic fuera del campo de texto para confirmar la entrada.
-
-**Parte B — Texto alternativo para el gráfico de líneas:**
-
-7. Haz clic en la pestaña **`Lineas_Tendencia`** en la barra inferior del libro.
-
-8. Haz clic en el gráfico para seleccionarlo.
-
-9. Haz clic derecho sobre el gráfico y selecciona **Editar texto alternativo**.
-
-10. En el campo de texto del panel, escribe:
-
-    ```
-    Gráfico de líneas con marcadores que muestra la tendencia de ventas trimestrales por región durante el año 2024. Cada línea representa una región (Norte, Sur, Este, Oeste) y los marcadores indican el valor exacto de ventas en cada trimestre. Permite identificar visualmente las regiones con mayor crecimiento y las que presentaron descensos durante el año.
-    ```
-
-11. Haz clic fuera del campo para confirmar.
-
-**Parte C — Texto alternativo para el gráfico circular:**
-
-12. Haz clic en la pestaña **`Datos_Ventas`** para regresar a la hoja de datos.
-
-13. Haz clic sobre el gráfico circular para seleccionarlo.
-
-14. Haz clic derecho sobre el gráfico y selecciona **Editar texto alternativo**.
-
-15. En el campo de texto, escribe:
-
-    ```
-    Gráfico circular que muestra la distribución porcentual de ventas por producto en el año 2024. El Producto A representa la mayor participación con aproximadamente un cuarto del total, seguido por los Productos B, C y D en proporciones decrecientes. El gráfico permite identificar rápidamente qué productos concentran la mayor parte de los ingresos.
-    ```
-
-    > **Nota:** Ajusta los porcentajes y descripciones según los datos reales de tu archivo de práctica.
-
-16. Haz clic fuera del campo para confirmar.
-
-17. Cierra el Panel de Accesibilidad haciendo clic en la **X** del panel.
-
-#### Resultado Esperado
-
-- Los tres gráficos tienen texto alternativo descriptivo que explica el tipo de gráfico, los datos que representa y las conclusiones principales que se pueden extraer.
-- El texto alternativo es suficientemente detallado para que una persona que no puede ver el gráfico comprenda la información que comunica.
-
-#### Verificación
-
-- [ ] El gráfico en `Columnas_Regiones` tiene texto alternativo visible en el panel de accesibilidad.
-- [ ] El gráfico en `Lineas_Tendencia` tiene texto alternativo visible en el panel de accesibilidad.
-- [ ] El gráfico circular en `Datos_Ventas` tiene texto alternativo visible en el panel de accesibilidad.
-- [ ] Ningún texto alternativo dice simplemente "Gráfico" o está vacío.
-
----
-
-### Paso 11: Personalizar el Gráfico Circular
+### Paso 9: Personalizar el Gráfico Circular
 
 **Objetivo:** Aplicar personalizaciones específicas al gráfico circular: agregar etiquetas con porcentajes, aplicar un estilo y separar un sector para destacar el producto principal.
 
@@ -620,16 +548,24 @@ Debes poder identificar claramente los dos rangos de datos y comprender que:
    - En el panel derecho, en la sección **Opciones de etiqueta**, marca la casilla **Porcentaje** y desmarca la casilla **Valor** (si estaba marcada).
    - Cierra el panel de formato.
 
+   ![Imagen práctica](../images/imagen%20141.png)
+
 3. **Separar un sector (efecto "explosión"):**
    - Haz clic una vez sobre el gráfico circular para seleccionar toda la serie.
    - Haz clic una segunda vez (lentamente, no doble clic) sobre el sector del **Producto A** para seleccionar solo ese sector.
    - Con ese sector seleccionado, haz clic derecho y selecciona **Dar formato a punto de datos**.
-   - En el panel derecho, en la sección **Opciones de serie**, busca el control deslizante **Explosión del punto** y arrástralo hasta aproximadamente **10%**.
+
+ ![Imagen práctica](../images/imagen%20142.png)
+
+   - En el panel derecho, en la sección **Opciones de serie**, busca el control deslizante **Sección de puntos** y arrástralo hasta aproximadamente **10%**.
    - Cierra el panel.
+ ![Imagen práctica](../images/imagen%20143.png)
 
 4. **Aplicar un estilo al gráfico circular:**
    - Haz clic en el borde del gráfico para seleccionar el gráfico completo (no solo el sector).
-   - Ve a **Diseño de gráfico → Estilos de gráfico** y selecciona el **Estilo 3** (sectores con bordes blancos definidos).
+   - Ve a **Diseño de gráfico → Estilos de gráfico** y selecciona el **Estilo 3** 
+
+   ![Imagen práctica](../images/imagen%20144.png)
 
 5. **Agregar título al gráfico circular:**
    - Haz clic en el botón **+** y verifica que **Título del gráfico** está marcado.
@@ -638,11 +574,15 @@ Debes poder identificar claramente los dos rangos de datos y comprender que:
      Distribución de Ventas por Producto 2024
      ```
 
+
+
 #### Resultado Esperado
 
 - El gráfico circular muestra el porcentaje de cada sector como etiqueta (en lugar de los valores absolutos).
 - El sector del Producto A está ligeramente separado del resto del círculo para destacarlo.
 - El gráfico tiene el título "Distribución de Ventas por Producto 2024".
+
+![Imagen práctica](../images/imagen%20145.png)
 
 #### Verificación
 
@@ -652,7 +592,7 @@ Debes poder identificar claramente los dos rangos de datos y comprender que:
 
 ---
 
-### Paso 12: Guardar el Libro de Trabajo
+### Paso 10: Guardar el Libro de Trabajo
 
 **Objetivo:** Guardar todos los cambios realizados durante la práctica asegurando que el archivo se guarda correctamente en OneDrive.
 
@@ -735,22 +675,6 @@ Este proceso confirma que los gráficos están dinámicamente vinculados a los d
 5. Si el problema persiste, verifica que el archivo no está en Modo de compatibilidad: ve a **Archivo → Información** y, si aparece el botón **Convertir**, haz clic en él para convertir el archivo al formato moderno `.xlsx`.
 6. Si el rango del gráfico fue definido incorrectamente, abre **Diseño de gráfico → Seleccionar datos** y verifica que los valores de las series son referencias de celda (ejemplo: `=Datos_Ventas!$B$2:$B$5`) y no valores numéricos fijos.
 
----
-
-### Problema 2: El Panel de Accesibilidad no muestra la opción de "Texto alternativo" o el campo aparece vacío después de escribir
-
-**Síntoma:** Al intentar agregar texto alternativo al gráfico, el Panel de Accesibilidad se abre pero no muestra el campo de texto alternativo, o el texto escrito desaparece al hacer clic fuera del campo. Al reabrir el panel, el campo vuelve a estar vacío.
-
-**Causa probable:** El gráfico no está correctamente seleccionado como objeto (se puede estar editando el interior del gráfico en lugar de seleccionar el gráfico como objeto completo). También puede ocurrir si se usó el método de **Revisar → Comprobar accesibilidad** en lugar del método de clic derecho **Editar texto alternativo**, y el panel muestra la vista de revisión general en lugar del campo de edición de texto alternativo específico del gráfico seleccionado.
-
-**Solución:**
-1. Haz clic **una sola vez** fuera del gráfico para deseleccionarlo completamente.
-2. Haz clic **una sola vez** sobre el borde del gráfico (no en el interior) para seleccionarlo como objeto. Deberás ver los controladores de tamaño (círculos) en las esquinas y los lados.
-3. Verifica en la barra de fórmulas que aparece el texto `Gráfico 1` (o el nombre del gráfico) confirmando que está seleccionado como objeto y no en modo de edición.
-4. Haz clic **derecho** sobre el borde del gráfico y selecciona **Editar texto alternativo** del menú contextual.
-5. En el panel que aparece a la derecha, escribe el texto en el campo y presiona **Tab** (no **Enter**) para confirmar la entrada sin cerrar el panel.
-6. Verifica que el texto permanece en el campo antes de cerrar el panel.
-7. Si el problema persiste, guarda el archivo (**Ctrl+G**), ciérralo y vuelve a abrirlo desde OneDrive.
 
 ---
 
@@ -772,8 +696,6 @@ Al finalizar la práctica, realiza los siguientes pasos para dejar el entorno en
 
 5. **Cerrar Excel:** Ve a **Archivo → Cerrar** para cerrar el libro. Si Excel pregunta si deseas guardar, selecciona **Guardar**.
 
-6. **Verificar en OneDrive:** Abre el navegador web, accede a [onedrive.live.com](https://onedrive.live.com) o al OneDrive de tu organización, y confirma que el archivo `Lab05_Ventas_Graficos.xlsx` aparece con la fecha y hora de modificación actualizadas.
-
 ---
 
 ## Resumen
@@ -794,12 +716,8 @@ En esta práctica aplicaste el flujo completo de creación y gestión de gráfic
 | Personalizar título, etiquetas, leyenda | Botón + (Elementos de gráfico) | 8 |
 | Ajustar escala del eje Y | Doble clic en eje → Dar formato a eje | 8 |
 | Aplicar estilos y esquemas de color | Diseño de gráfico → Estilos de gráfico / Cambiar colores | 9 |
-| Agregar texto alternativo | Clic derecho → Editar texto alternativo | 10 |
 | Separar sector en gráfico circular | Clic derecho → Dar formato a punto de datos → Explosión | 11 |
 
-### Reflexión Final sobre Accesibilidad
-
-El texto alternativo que agregaste en el Paso 10 no es un detalle opcional: es una práctica profesional obligatoria en entornos corporativos que distribuyen documentos digitales. Las personas con discapacidades visuales que utilizan lectores de pantalla (como NVDA o JAWS) dependen de estos textos para comprender el contenido de los gráficos. Un texto alternativo bien escrito debe responder tres preguntas: **¿Qué tipo de gráfico es?**, **¿Qué datos representa?** y **¿Qué conclusión principal comunica?**
 
 ### Próximos Pasos
 
