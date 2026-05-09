@@ -42,7 +42,7 @@ Al completar esta práctica, serás capaz de:
 
 - Cuenta de Microsoft 365 activa con acceso a Microsoft Excel 365.
 
-- Archivo de práctica |  [Lab05_Ventas_Graficos (1).xlsx](./Lab05_Ventas_Graficos(1).xlsx)
+- Archivo de práctica |  [Descargar Lab05_Ventas_Graficos.xlsx](<./Lab05_Ventas_Graficos%20(1).xlsx>)
 
 
 
