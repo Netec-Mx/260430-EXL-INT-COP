@@ -105,7 +105,7 @@ Realiza estos pasos **antes de comenzar** la práctica cronometrada:
 
 **Instrucciones:**
 
-1. Con el archivo **`Lab06_VentasAnuales.xlsx`** abierto en Excel (desde OneDrive), observa la cinta de opciones en la parte superior.
+1. Con el archivo [Descargar Lab06_VentasAnuales.xlsx](<./Lab06_VentasAnuales%20(1).xlsx>) abierto en Excel (desde OneDrive), observa la cinta de opciones en la parte superior.
 2. Haz clic en la pestaña **Inicio**.
 3. Localiza el botón **Copilot** en el extremo derecho del grupo de comandos (ícono con el logotipo multicolor de Copilot). Si no lo ves en **Inicio**, búscalo en la pestaña **Copilot** si existe en tu versión.
 
